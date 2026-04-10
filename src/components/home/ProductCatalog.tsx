@@ -104,23 +104,25 @@ export function ProductCatalog() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="sticky top-[56px] z-30 -mx-4 mb-6 border-b border-graphite bg-midnight/95 px-4 py-2.5 backdrop-blur-xl sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8"
+          className="sticky top-[56px] z-30 -mx-4 mb-6 overflow-hidden border-b border-graphite bg-midnight/95 px-4 py-2.5 backdrop-blur-xl sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8"
         >
-          <div className="flex items-center gap-3 overflow-x-auto scrollbar-none">
+          <div className="overflow-x-auto scrollbar-none">
             <CategoryFilter active={activeCategory} onChange={setActiveCategory} />
-            <div className="ml-auto flex shrink-0 items-center gap-2">
+          </div>
+          <div className="mt-2 flex items-center gap-2">
+            <div className="flex-1">
               <SearchBar value={searchQuery} onChange={setSearchQuery} />
-              <select
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value as SortOption)}
-                className="rounded-lg border border-slate bg-charcoal px-2 py-2 text-[11px] text-silver focus:border-gold/50 focus:outline-none"
-              >
-                <option value="name-asc">A–Z</option>
-                <option value="name-desc">Z–A</option>
-                <option value="price-asc">Low–High</option>
-                <option value="price-desc">High–Low</option>
-              </select>
             </div>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value as SortOption)}
+              className="shrink-0 rounded-lg border border-slate bg-charcoal px-2 py-2 text-[11px] text-silver focus:border-gold/50 focus:outline-none"
+            >
+              <option value="name-asc">A–Z</option>
+              <option value="name-desc">Z–A</option>
+              <option value="price-asc">Low–High</option>
+              <option value="price-desc">High–Low</option>
+            </select>
           </div>
         </motion.div>
 
