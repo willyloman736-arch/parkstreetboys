@@ -125,13 +125,13 @@ export function HeroSection() {
           initial="hidden"
           animate="visible"
         >
-          {/* Decorative line */}
+          {/* Decorative line + subtitle */}
           <motion.div
             variants={heroText}
-            className="mx-auto mb-6 flex items-center justify-center gap-4"
+            className="mx-auto mb-8 sm:mb-6 flex items-center justify-center gap-3 sm:gap-4"
           >
             <motion.div
-              className="h-px w-12 bg-gradient-to-r from-transparent to-gold/60"
+              className="h-px w-8 sm:w-12 bg-gradient-to-r from-transparent to-gold/60"
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
               transition={{
@@ -140,11 +140,11 @@ export function HeroSection() {
                 ease: [0.22, 1, 0.36, 1],
               }}
             />
-            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+            <span className="text-sm sm:text-xs font-semibold uppercase tracking-[0.25em] sm:tracking-[0.3em] text-gold">
               Delivered Nationwide
             </span>
             <motion.div
-              className="h-px w-12 bg-gradient-to-l from-transparent to-gold/60"
+              className="h-px w-8 sm:w-12 bg-gradient-to-l from-transparent to-gold/60"
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
               transition={{
@@ -157,17 +157,25 @@ export function HeroSection() {
 
           <motion.h1
             variants={heroText}
-            className="font-display text-5xl font-bold leading-[1.05] text-ivory sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"
-            style={{ textShadow: "0 4px 30px rgba(0,0,0,0.5)" }}
+            className="font-display text-[3.5rem] font-bold leading-[0.95] text-ivory sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"
+            style={{ textShadow: "0 4px 40px rgba(0,0,0,0.6), 0 0 80px rgba(45,106,79,0.15)" }}
           >
             Premium
             <br />
             <span className="text-gradient-gold">Wholesale</span>
           </motion.h1>
 
+          {/* Tagline — visible on mobile for premium feel */}
+          <motion.p
+            variants={heroText}
+            className="mx-auto mt-5 max-w-xs text-sm leading-relaxed text-silver/80 sm:mt-4 sm:max-w-md sm:text-base"
+          >
+            Curated exotics &amp; top-shelf selections — direct to your door.
+          </motion.p>
+
           <motion.div
             variants={heroText}
-            className="mt-10"
+            className="mt-8 sm:mt-10"
           >
             <Button href="/#catalog" size="lg">
               View Menu
