@@ -2,14 +2,20 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-const TELEGRAM_HANDLE = "parkstreetboys";
+import { TELEGRAM_URL } from "@/data/site-config";
+import { useOrder } from "@/context/OrderContext";
 
 export function TelegramChat() {
+  const { state } = useOrder();
+  const hasItems = state.items.length > 0;
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-40">
+    <motion.div
+      animate={{ y: hasItems ? -88 : 0 }}
+      transition={{ type: "spring", stiffness: 260, damping: 30 }}
+      className="fixed bottom-6 right-6 z-40"
+    >
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -20,7 +26,7 @@ export function TelegramChat() {
             className="mb-3 w-72 rounded-xl border border-graphite bg-charcoal shadow-2xl overflow-hidden"
           >
             {/* Header */}
-            <div className="bg-gold/10 border-b border-graphite px-4 py-3">
+            <div className="bg-forest/10 border-b border-graphite px-4 py-3">
               <p className="text-sm font-semibold text-ivory">Live Chat</p>
               <p className="text-[11px] text-silver">
                 Chat with us on Telegram
@@ -40,10 +46,10 @@ export function TelegramChat() {
               </div>
 
               <a
-                href={`https://t.me/${TELEGRAM_HANDLE}`}
+                href={TELEGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex w-full items-center justify-center gap-2 rounded-lg bg-gold py-2.5 text-sm font-semibold text-ivory transition-colors hover:bg-champagne"
+                className="flex w-full items-center justify-center gap-2 rounded-lg bg-forest py-2.5 text-sm font-semibold text-ivory transition-colors hover:bg-emerald"
               >
                 <svg
                   width="16"
@@ -65,7 +71,7 @@ export function TelegramChat() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="flex h-14 w-14 items-center justify-center rounded-full bg-gold shadow-lg shadow-gold/20 text-ivory transition-colors hover:bg-champagne"
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-forest shadow-lg shadow-forest/20 text-ivory transition-colors hover:bg-emerald"
         aria-label="Live chat"
       >
         {isOpen ? (
@@ -79,6 +85,6 @@ export function TelegramChat() {
           </svg>
         )}
       </motion.button>
-    </div>
+    </motion.div>
   );
 }

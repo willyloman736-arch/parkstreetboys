@@ -19,12 +19,23 @@ const initialForm: CustomerInfo = {
 };
 
 export function OrderForm() {
-  const { dispatch } = useOrder();
-  const [form, setForm] = useState<CustomerInfo>(initialForm);
+  const { state, dispatch } = useOrder();
+  // Seed from context so data survives Back → Forward navigation between steps.
+  // We intentionally initialize lazily so `customerInfo` changes later (e.g.
+  // RESET_ORDER) don't wipe local edits mid-typing.
+  const [form, setForm] = useState<CustomerInfo>(
+    () => state.customerInfo ?? initialForm
+  );
   const [errors, setErrors] = useState<Partial<Record<keyof CustomerInfo, string>>>({});
 
   const update = (field: keyof CustomerInfo, value: string) => {
-    setForm((prev) => ({ ...prev, [field]: value }));
+    setForm((prev) => {
+      const next = { ...prev, [field]: value };
+      // Persist each keystroke to context so a parent re-mount (or drawer close
+      // + reopen) always restores exactly what the user typed.
+      dispatch({ type: "SET_CUSTOMER_INFO", info: next });
+      return next;
+    });
     if (errors[field]) setErrors((prev) => ({ ...prev, [field]: undefined }));
   };
 
@@ -135,7 +146,7 @@ export function OrderForm() {
         <div className="mt-auto pt-4 border-t border-graphite">
           <button
             type="submit"
-            className="w-full rounded-lg bg-gold py-3.5 text-sm font-semibold text-ivory transition-colors hover:bg-champagne"
+            className="w-full rounded-lg bg-forest py-3.5 text-sm font-semibold text-ivory transition-colors hover:bg-emerald"
           >
             Continue to Payment
           </button>
@@ -167,7 +178,7 @@ function Field({
     "w-full rounded-lg border bg-midnight/50 px-3 py-2.5 text-sm text-pearl placeholder:text-ash transition-colors focus:outline-none " +
     (error
       ? "border-red-500/50 focus:border-red-500"
-      : "border-slate focus:border-gold/50");
+      : "border-slate focus:border-forest/50");
 
   return (
     <div>

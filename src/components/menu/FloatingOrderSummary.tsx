@@ -16,13 +16,13 @@ export function FloatingOrderSummary() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
           transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed bottom-0 left-0 right-0 z-40 border-t border-gold/20 bg-charcoal/95 backdrop-blur-xl"
+          className="fixed bottom-0 left-0 right-0 z-40 border-t border-forest/20 bg-charcoal/95 backdrop-blur-xl"
         >
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
             <div className="flex items-center gap-3">
               <div className="relative">
-                <ShoppingBagIcon size={20} className="text-gold" />
-                <span className="absolute -top-1.5 -right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-gold text-[9px] font-bold text-ivory">
+                <ShoppingBagIcon size={20} className="text-forest" />
+                <span className="absolute -top-1.5 -right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-forest text-[9px] font-bold text-ivory">
                   {totalItems}
                 </span>
               </div>
@@ -38,7 +38,7 @@ export function FloatingOrderSummary() {
 
             <button
               onClick={openDrawer}
-              className="rounded-lg bg-gold px-5 py-2.5 text-sm font-semibold text-ivory transition-colors hover:bg-champagne"
+              className="rounded-lg bg-forest px-5 py-2.5 text-sm font-semibold text-ivory transition-colors hover:bg-emerald"
             >
               Review Order
             </button>

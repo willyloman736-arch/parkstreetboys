@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { slideInRight, fadeIn } from "@/lib/animations";
 import { useOrder } from "@/context/OrderContext";
+import { useBodyScrollLock } from "@/lib/useBodyScrollLock";
 import { OrderItemRow } from "./OrderItemRow";
 import { OrderForm } from "./OrderForm";
 import { PaymentSelect } from "./PaymentSelect";
@@ -20,6 +21,8 @@ export function OrderDrawer() {
     removeFromOrder,
     dispatch,
   } = useOrder();
+
+  useBodyScrollLock(state.isDrawerOpen);
 
   const getTitle = () => {
     if (state.isSubmitted) return "Confirmation";
@@ -48,7 +51,7 @@ export function OrderDrawer() {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="fixed top-0 right-0 bottom-0 z-50 flex w-full max-w-md flex-col border-l border-gold/10 bg-charcoal shadow-2xl"
+            className="fixed top-0 right-0 bottom-0 z-50 flex w-full max-w-md flex-col border-l border-forest/10 bg-charcoal shadow-2xl"
           >
             {/* Header */}
             <div className="flex items-center justify-between border-b border-graphite px-5 py-4">
@@ -112,7 +115,7 @@ export function OrderDrawer() {
                     <span className="text-sm text-silver">
                       {totalItems} {totalItems === 1 ? "item" : "items"}
                     </span>
-                    <span className="text-lg font-semibold text-gold">
+                    <span className="text-lg font-semibold text-forest">
                       {formatCurrency(totalCost)}
                     </span>
                   </div>
@@ -120,7 +123,7 @@ export function OrderDrawer() {
                     onClick={() =>
                       dispatch({ type: "SET_FORM_STEP", isFormStep: true })
                     }
-                    className="w-full rounded-lg bg-gold py-3.5 text-sm font-semibold text-ivory transition-colors hover:bg-champagne"
+                    className="w-full rounded-lg bg-forest py-3.5 text-sm font-semibold text-ivory transition-colors hover:bg-emerald"
                   >
                     Continue to Details
                   </button>

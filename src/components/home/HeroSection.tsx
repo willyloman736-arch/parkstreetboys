@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { Button } from "@/components/shared/Button";
 import { heroText, staggerContainer } from "@/lib/animations";
@@ -12,6 +12,7 @@ function FloatingParticle({
   y,
   size,
   color,
+  active,
 }: {
   delay: number;
   duration: number;
@@ -19,6 +20,7 @@ function FloatingParticle({
   y: string;
   size: number;
   color: string;
+  active: boolean;
 }) {
   return (
     <motion.div
@@ -31,16 +33,20 @@ function FloatingParticle({
         background: color,
         filter: `blur(${size * 0.4}px)`,
       }}
-      animate={{
-        y: [0, -30, 10, -20, 0],
-        x: [0, 15, -10, 20, 0],
-        opacity: [0.3, 0.7, 0.4, 0.8, 0.3],
-        scale: [1, 1.2, 0.9, 1.15, 1],
-      }}
+      animate={
+        active
+          ? {
+              y: [0, -30, 10, -20, 0],
+              x: [0, 15, -10, 20, 0],
+              opacity: [0.3, 0.7, 0.4, 0.8, 0.3],
+              scale: [1, 1.2, 0.9, 1.15, 1],
+            }
+          : { y: 0, x: 0, opacity: 0.3, scale: 1 }
+      }
       transition={{
         duration,
         delay,
-        repeat: Infinity,
+        repeat: active ? Infinity : 0,
         ease: "easeInOut",
       }}
     />
@@ -66,6 +72,7 @@ export function HeroSection() {
   });
   const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+  const isInView = useInView(ref, { amount: 0.1 });
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -106,11 +113,11 @@ export function HeroSection() {
           }}
         />
 
-        {/* Floating particles over video */}
+        {/* Floating particles over video — pause when hero is scrolled out of view */}
         {mounted &&
           particles.map((p, i) => (
             <div key={i} className="z-30">
-              <FloatingParticle {...p} />
+              <FloatingParticle {...p} active={isInView} />
             </div>
           ))}
       </motion.div>
@@ -131,7 +138,7 @@ export function HeroSection() {
             className="mx-auto mb-8 sm:mb-6 flex items-center justify-center gap-3 sm:gap-4"
           >
             <motion.div
-              className="h-px w-8 sm:w-12 bg-gradient-to-r from-transparent to-gold/60"
+              className="h-px w-8 sm:w-12 bg-gradient-to-r from-transparent to-forest/60"
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
               transition={{
@@ -140,11 +147,11 @@ export function HeroSection() {
                 ease: [0.22, 1, 0.36, 1],
               }}
             />
-            <span className="text-sm sm:text-xs font-semibold uppercase tracking-[0.25em] sm:tracking-[0.3em] text-gold">
+            <span className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.25em] sm:tracking-[0.3em] text-forest">
               Delivered Nationwide
             </span>
             <motion.div
-              className="h-px w-8 sm:w-12 bg-gradient-to-l from-transparent to-gold/60"
+              className="h-px w-8 sm:w-12 bg-gradient-to-l from-transparent to-forest/60"
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
               transition={{
@@ -162,7 +169,7 @@ export function HeroSection() {
           >
             Premium
             <br />
-            <span className="text-gradient-gold">Wholesale</span>
+            <span className="text-gradient-forest">Wholesale</span>
           </motion.h1>
 
           {/* Tagline — visible on mobile for premium feel */}
@@ -203,7 +210,7 @@ export function HeroSection() {
             className="flex h-10 w-6 items-start justify-center rounded-full border border-slate/50 p-1.5"
           >
             <motion.div
-              className="h-2 w-1 rounded-full bg-gold"
+              className="h-2 w-1 rounded-full bg-forest"
               animate={{ opacity: [0.4, 1, 0.4] }}
               transition={{
                 duration: 2,

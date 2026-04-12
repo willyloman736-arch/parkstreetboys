@@ -40,24 +40,29 @@ export function Navbar() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
-            ? "bg-midnight/90 backdrop-blur-xl border-b border-graphite/50 py-3"
-            : "bg-transparent py-5"
+            ? "bg-midnight/90 backdrop-blur-xl border-b border-graphite/50 py-2 sm:py-3"
+            : "bg-gradient-to-b from-midnight/60 to-transparent backdrop-blur-sm py-2.5 sm:py-5"
         )}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5">
+          {/* Logo + brand */}
+          <Link href="/" className="flex items-center gap-2">
             <Image
               src="/images/logo.webp"
               alt="Park Street Boys"
               width={40}
               height={40}
-              className="h-10 w-10 rounded-full object-contain"
+              className="h-8 w-8 rounded-full object-contain sm:h-10 sm:w-10"
               priority
             />
-            <span className="hidden font-display text-lg font-semibold text-ivory sm:block">
-              Park Street Boys
-            </span>
+            <div className="flex flex-col">
+              <span className="font-display text-[13px] font-semibold leading-tight text-ivory sm:text-lg">
+                Park Street Boys
+              </span>
+              <span className="text-[9px] font-medium uppercase tracking-[0.15em] text-forest sm:hidden">
+                Wholesale
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
@@ -78,7 +83,7 @@ export function Navbar() {
                 {pathname === link.href && (
                   <motion.div
                     layoutId="nav-indicator"
-                    className="mt-1 h-px bg-gold"
+                    className="mt-1 h-px bg-forest"
                     transition={{ duration: 0.3 }}
                   />
                 )}
@@ -87,20 +92,21 @@ export function Navbar() {
           </nav>
 
           {/* Right Actions */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1.5 sm:gap-3">
             <button
               onClick={openDrawer}
-              className="relative flex h-10 w-10 items-center justify-center rounded-lg text-silver transition-colors hover:bg-graphite hover:text-ivory"
+              className="relative flex h-9 w-9 items-center justify-center rounded-lg border border-transparent text-silver transition-colors hover:border-graphite hover:bg-graphite/50 hover:text-ivory sm:h-10 sm:w-10"
               aria-label="Order summary"
             >
-              <ShoppingBagIcon size={20} />
+              <ShoppingBagIcon size={18} className="sm:hidden" />
+              <ShoppingBagIcon size={20} className="hidden sm:block" />
               <AnimatePresence>
                 {totalItems > 0 && (
                   <motion.span
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     exit={{ scale: 0 }}
-                    className="absolute -top-0.5 -right-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-gold text-[10px] font-bold text-ivory"
+                    className="absolute -top-1 -right-1 flex h-4.5 w-4.5 items-center justify-center rounded-full bg-forest text-[9px] font-bold text-ivory sm:h-5 sm:w-5 sm:text-[10px]"
                   >
                     {totalItems}
                   </motion.span>
@@ -110,10 +116,10 @@ export function Navbar() {
 
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="flex h-10 w-10 items-center justify-center rounded-lg text-silver transition-colors hover:bg-graphite hover:text-ivory md:hidden"
+              className="flex h-9 w-9 items-center justify-center rounded-lg border border-transparent text-silver transition-colors hover:border-graphite hover:bg-graphite/50 hover:text-ivory sm:h-10 sm:w-10 md:hidden"
               aria-label="Toggle menu"
             >
-              {mobileOpen ? <XIcon size={20} /> : <MenuIcon size={20} />}
+              {mobileOpen ? <XIcon size={18} /> : <MenuIcon size={18} />}
             </button>
           </div>
         </div>

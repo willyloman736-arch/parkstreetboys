@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect, useRef, useCallback } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 import { Container } from "@/components/shared/Container";
 import { SectionHeading } from "@/components/shared/SectionHeading";
@@ -116,7 +116,7 @@ export function ProductCatalog() {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as SortOption)}
-              className="shrink-0 rounded-lg border border-slate bg-charcoal px-2 py-2 text-[11px] text-silver focus:border-gold/50 focus:outline-none"
+              className="shrink-0 rounded-lg border border-slate bg-charcoal px-2 py-2 text-[11px] text-silver focus:border-forest/50 focus:outline-none"
             >
               <option value="name-asc">A–Z</option>
               <option value="name-desc">Z–A</option>
@@ -158,7 +158,7 @@ export function ProductCatalog() {
         {hasMore && (
           <div ref={loaderRef} className="flex justify-center py-12">
             <div className="flex items-center gap-2 text-sm text-ash">
-              <div className="h-4 w-4 animate-spin rounded-full border-2 border-gold/30 border-t-gold" />
+              <div className="h-4 w-4 animate-spin rounded-full border-2 border-forest/30 border-t-forest" />
               Loading more products...
             </div>
           </div>
@@ -173,12 +173,15 @@ export function ProductCatalog() {
 
       <FloatingOrderSummary />
 
-      {selectedProduct && (
-        <ProductModal
-          product={selectedProduct}
-          onClose={() => setSelectedProduct(null)}
-        />
-      )}
+      <AnimatePresence>
+        {selectedProduct && (
+          <ProductModal
+            key={selectedProduct.id}
+            product={selectedProduct}
+            onClose={() => setSelectedProduct(null)}
+          />
+        )}
+      </AnimatePresence>
     </section>
   );
 }

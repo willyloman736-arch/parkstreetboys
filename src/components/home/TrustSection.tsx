@@ -78,7 +78,7 @@ export function TrustSection() {
                 style={{ perspective: 600, transformStyle: "preserve-3d" }}
                 className="inline-block"
               >
-                <span className="block font-display text-3xl font-bold text-gold sm:text-4xl lg:text-5xl">
+                <span className="block font-display text-3xl font-bold text-forest sm:text-4xl lg:text-5xl">
                   <AnimatedCounter
                     value={stat.value}
                     suffix={stat.suffix}

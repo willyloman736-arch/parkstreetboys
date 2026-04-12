@@ -62,7 +62,7 @@ export function OrderItemRow({
             onChange={onUpdateQuantity}
             min={1}
           />
-          <span className="text-sm font-semibold text-gold">
+          <span className="text-sm font-semibold text-forest">
             {formatCurrency(item.product.unitPrice * item.quantity)}
           </span>
         </div>

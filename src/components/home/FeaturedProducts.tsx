@@ -31,7 +31,7 @@ function FeaturedCard({ product }: { product: (typeof featured)[0] }) {
       variants={staggerChild}
       whileHover={{ y: -4 }}
       transition={{ duration: 0.2 }}
-      className="group overflow-hidden rounded-xl border border-graphite bg-charcoal transition-colors hover:border-gold/20"
+      className="group overflow-hidden rounded-xl border border-graphite bg-charcoal transition-colors hover:border-forest/20"
     >
       <div className="relative aspect-[4/3] overflow-hidden bg-graphite">
         {hasRealImage && !imgError ? (
@@ -50,7 +50,7 @@ function FeaturedCard({ product }: { product: (typeof featured)[0] }) {
             </span>
           </div>
         )}
-        <Badge variant="gold" className="absolute top-3 left-3 z-10">
+        <Badge variant="forest" className="absolute top-3 left-3 z-10">
           {product.category}
         </Badge>
       </div>
@@ -68,15 +68,15 @@ function FeaturedCard({ product }: { product: (typeof featured)[0] }) {
         </p>
 
         <div className="mt-3 flex items-center justify-between">
-          <span className="text-lg font-semibold text-gold">
+          <span className="text-lg font-semibold text-forest">
             {formatCurrency(product.unitPrice)}
           </span>
           <button
             onClick={() => addToOrder(product)}
             className={`rounded-lg px-3 py-1.5 text-xs font-medium transition-all ${
               inOrder
-                ? "bg-gold/15 text-gold"
-                : "bg-graphite text-silver hover:bg-gold hover:text-ivory"
+                ? "bg-forest/15 text-forest"
+                : "bg-graphite text-silver hover:bg-forest hover:text-ivory"
             }`}
           >
             {inOrder ? (

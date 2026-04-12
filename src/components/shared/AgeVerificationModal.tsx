@@ -59,7 +59,7 @@ export function AgeVerificationModal() {
               <h2 className="font-display text-2xl font-semibold text-ivory sm:text-3xl">
                 Age Verification
               </h2>
-              <div className="mx-auto mt-3 h-px w-16 bg-gold/40" />
+              <div className="mx-auto mt-3 h-px w-16 bg-forest/40" />
             </div>
 
             {!denied ? (
@@ -72,7 +72,7 @@ export function AgeVerificationModal() {
                 <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
                   <button
                     onClick={handleConfirm}
-                    className="flex-1 rounded-lg bg-gold px-6 py-3.5 text-sm font-semibold text-ivory transition-colors hover:bg-champagne"
+                    className="flex-1 rounded-lg bg-forest px-6 py-3.5 text-sm font-semibold text-ivory transition-colors hover:bg-emerald"
                   >
                     Yes, I Am 21+
                   </button>
@@ -97,7 +97,7 @@ export function AgeVerificationModal() {
                 </p>
                 <p className="text-sm text-ash">
                   If you believe this is an error, please contact us at{" "}
-                  <span className="text-gold">
+                  <span className="text-forest">
                     orders@parkstreetboyswholesale.com
                   </span>
                 </p>

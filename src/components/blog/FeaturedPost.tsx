@@ -41,7 +41,7 @@ export function FeaturedPost({ post }: FeaturedPostProps) {
         {/* Content */}
         <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
           <div className="mb-4 flex items-center gap-3">
-            <Badge variant="gold">Featured</Badge>
+            <Badge variant="forest">Featured</Badge>
             <Badge variant="outline">
               {categoryLabels[post.category] || post.category}
             </Badge>

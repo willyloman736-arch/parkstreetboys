@@ -24,7 +24,7 @@ export function BlogCard({ post }: BlogCardProps) {
       variants={staggerChild}
       whileHover={{ y: -3 }}
       transition={{ duration: 0.2 }}
-      className="group flex flex-col overflow-hidden rounded-xl border border-graphite bg-charcoal transition-colors hover:border-gold/20"
+      className="group flex flex-col overflow-hidden rounded-xl border border-graphite bg-charcoal transition-colors hover:border-forest/20"
     >
       {/* Image placeholder */}
       <div className="relative aspect-[16/10] overflow-hidden bg-graphite">
@@ -33,13 +33,13 @@ export function BlogCard({ post }: BlogCardProps) {
             Cover Image
           </span>
         </div>
-        <Badge variant="gold" className="absolute top-3 left-3 text-[10px]">
+        <Badge variant="forest" className="absolute top-3 left-3 text-[10px]">
           {categoryLabels[post.category] || post.category}
         </Badge>
       </div>
 
       <div className="flex flex-1 flex-col p-5">
-        <h3 className="font-display text-base font-semibold text-ivory leading-snug line-clamp-2 group-hover:text-gold transition-colors">
+        <h3 className="font-display text-base font-semibold text-ivory leading-snug line-clamp-2 group-hover:text-forest transition-colors">
           {post.title}
         </h3>
 

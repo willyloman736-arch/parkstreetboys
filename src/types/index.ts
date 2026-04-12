@@ -98,4 +98,5 @@ export interface SiteConfig {
   contactEmail: string;
   contactPhone: string;
   address: string;
+  telegramHandle: string;
 }

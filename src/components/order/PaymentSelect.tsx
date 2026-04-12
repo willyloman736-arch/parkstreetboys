@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { useOrder } from "@/context/OrderContext";
 import { formatCurrency } from "@/lib/utils";
 import { ChevronLeftIcon } from "@/components/icons";
+import { TELEGRAM_HANDLE } from "@/data/site-config";
 
 type PaymentMethod = "apple-pay" | "cashapp" | "zelle" | "chime" | "crypto";
 
@@ -96,8 +97,6 @@ const paymentMethods: PaymentMethodConfig[] = [
   },
 ];
 
-const TELEGRAM_HANDLE = "parkstreetboys";
-
 export function PaymentSelect() {
   const { state, totalItems, totalCost, dispatch } = useOrder();
   const [selected, setSelected] = useState<PaymentMethod | null>(null);
@@ -161,8 +160,8 @@ export function PaymentSelect() {
 
   const handleSubmit = () => {
     if (!selected) return;
-    const message = buildTelegramMessage();
-    const telegramUrl = `https://t.me/${TELEGRAM_HANDLE}?text=${message}`;
+    // buildTelegramMessage returns an already-encoded string
+    const telegramUrl = `https://t.me/${TELEGRAM_HANDLE}?text=${buildTelegramMessage()}`;
     dispatch({ type: "SUBMIT_ORDER" });
     window.open(telegramUrl, "_blank");
   };
@@ -193,7 +192,7 @@ export function PaymentSelect() {
             className={cn(
               "w-full flex items-center gap-3.5 rounded-xl border p-4 text-left transition-all",
               selected === method.id
-                ? "border-gold bg-gold/10"
+                ? "border-forest bg-forest/10"
                 : "border-graphite bg-midnight/50 hover:border-slate"
             )}
           >
@@ -201,7 +200,7 @@ export function PaymentSelect() {
               className={cn(
                 "flex h-11 w-11 shrink-0 items-center justify-center rounded-lg",
                 selected === method.id
-                  ? "bg-gold/20"
+                  ? "bg-forest/20"
                   : "bg-graphite"
               )}
               style={{ color: selected === method.id ? method.color : "#9ca3af" }}
@@ -213,7 +212,7 @@ export function PaymentSelect() {
               <p className="text-[11px] text-ash">{method.description}</p>
             </div>
             {method.id === "crypto" && (
-              <span className="shrink-0 rounded-full bg-gold/15 px-2.5 py-1 text-[10px] font-semibold text-gold">
+              <span className="shrink-0 rounded-full bg-forest/15 px-2.5 py-1 text-[10px] font-semibold text-forest">
                 5% OFF
               </span>
             )}
@@ -221,7 +220,7 @@ export function PaymentSelect() {
               className={cn(
                 "h-4 w-4 shrink-0 rounded-full border-2 transition-colors",
                 selected === method.id
-                  ? "border-gold bg-gold"
+                  ? "border-forest bg-forest"
                   : "border-slate"
               )}
             />
@@ -237,13 +236,13 @@ export function PaymentSelect() {
         </div>
         {isCrypto && (
           <div className="mb-1 flex items-center justify-between text-sm">
-            <span className="text-gold">BTC Discount (5%)</span>
-            <span className="text-gold">-{formatCurrency(discount)}</span>
+            <span className="text-forest">BTC Discount (5%)</span>
+            <span className="text-forest">-{formatCurrency(discount)}</span>
           </div>
         )}
         <div className="mb-4 flex items-center justify-between">
           <span className="text-sm font-medium text-ivory">Total</span>
-          <span className="text-xl font-bold text-gold">
+          <span className="text-xl font-bold text-forest">
             {formatCurrency(finalTotal)}
           </span>
         </div>
@@ -254,7 +253,7 @@ export function PaymentSelect() {
           className={cn(
             "w-full rounded-lg py-3.5 text-sm font-semibold transition-all flex items-center justify-center gap-2",
             selected
-              ? "bg-gold text-ivory hover:bg-champagne"
+              ? "bg-forest text-ivory hover:bg-emerald"
               : "bg-graphite text-ash cursor-not-allowed"
           )}
         >

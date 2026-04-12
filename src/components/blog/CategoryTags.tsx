@@ -27,8 +27,8 @@ export function CategoryTags({ active, onChange }: CategoryTagsProps) {
           className={cn(
             "rounded-full px-4 py-2 text-xs font-medium tracking-wide transition-all duration-300",
             active === tag.id
-              ? "bg-gold text-ivory"
-              : "border border-slate bg-transparent text-silver hover:border-gold/40 hover:text-ivory"
+              ? "bg-forest text-ivory"
+              : "border border-slate bg-transparent text-silver hover:border-forest/40 hover:text-ivory"
           )}
         >
           {tag.label}

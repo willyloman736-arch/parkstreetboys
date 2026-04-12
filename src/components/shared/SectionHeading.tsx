@@ -32,7 +32,7 @@ export function SectionHeading({
       )}
     >
       {label && (
-        <span className="mb-3 block text-xs font-semibold uppercase tracking-[0.2em] text-gold">
+        <span className="mb-3 block text-xs font-semibold uppercase tracking-[0.2em] text-forest">
           {label}
         </span>
       )}

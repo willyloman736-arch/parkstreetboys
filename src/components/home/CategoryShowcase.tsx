@@ -42,10 +42,10 @@ export function CategoryShowcase() {
             <Tilt3D intensity={12} scale={1.03} className="rounded-xl">
               <Link
                 href={`/#catalog`}
-                className="group relative block overflow-hidden rounded-xl border border-graphite bg-charcoal p-6 transition-all duration-500 hover:border-gold/30 hover:bg-graphite/50"
+                className="group relative block overflow-hidden rounded-xl border border-graphite bg-charcoal p-6 transition-all duration-500 hover:border-forest/30 hover:bg-graphite/50"
               >
                 {/* Glow effect on hover */}
-                <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-gradient-to-br from-gold/5 via-transparent to-transparent" />
+                <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-gradient-to-br from-forest/5 via-transparent to-transparent" />
 
                 <div className="relative">
                   <span className="mb-3 block text-3xl">
@@ -58,12 +58,12 @@ export function CategoryShowcase() {
                     {cat.description}
                   </p>
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-medium text-gold">
+                    <span className="text-xs font-medium text-forest">
                       {cat.productCount} Products
                     </span>
                     <ArrowRightIcon
                       size={16}
-                      className="text-slate transition-all duration-300 group-hover:translate-x-1 group-hover:text-gold"
+                      className="text-slate transition-all duration-300 group-hover:translate-x-1 group-hover:text-forest"
                     />
                   </div>
                 </div>

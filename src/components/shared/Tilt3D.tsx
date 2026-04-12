@@ -2,6 +2,7 @@
 
 import { useRef, useState, type ReactNode, type MouseEvent } from "react";
 import { motion } from "framer-motion";
+import { useIsTouchDevice } from "@/lib/useIsTouchDevice";
 
 interface Tilt3DProps {
   children: ReactNode;
@@ -10,6 +11,8 @@ interface Tilt3DProps {
   glare?: boolean;
   scale?: number;
   onClick?: () => void;
+  /** Force-disable the tilt effect regardless of input device */
+  disabled?: boolean;
 }
 
 export function Tilt3D({
@@ -19,14 +22,17 @@ export function Tilt3D({
   glare = true,
   scale = 1.02,
   onClick,
+  disabled = false,
 }: Tilt3DProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [transform, setTransform] = useState({ rotateX: 0, rotateY: 0 });
   const [glarePos, setGlarePos] = useState({ x: 50, y: 50 });
   const [isHovered, setIsHovered] = useState(false);
+  const isTouch = useIsTouchDevice();
+  const effectsDisabled = disabled || isTouch;
 
   const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
-    if (!ref.current) return;
+    if (effectsDisabled || !ref.current) return;
     const rect = ref.current.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width;
     const y = (e.clientY - rect.top) / rect.height;
@@ -38,10 +44,25 @@ export function Tilt3D({
     setGlarePos({ x: x * 100, y: y * 100 });
   };
 
+  const handleMouseEnter = () => {
+    if (effectsDisabled) return;
+    setIsHovered(true);
+  };
+
   const handleMouseLeave = () => {
     setTransform({ rotateX: 0, rotateY: 0 });
     setIsHovered(false);
   };
+
+  // On touch devices, skip the motion wrapper entirely to avoid the
+  // transform/perspective overhead and keep taps responsive.
+  if (effectsDisabled) {
+    return (
+      <div ref={ref} className={className} onClick={onClick}>
+        {children}
+      </div>
+    );
+  }
 
   return (
     <motion.div
@@ -49,7 +70,7 @@ export function Tilt3D({
       className={className}
       onClick={onClick}
       onMouseMove={handleMouseMove}
-      onMouseEnter={() => setIsHovered(true)}
+      onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       animate={{
         rotateX: transform.rotateX,

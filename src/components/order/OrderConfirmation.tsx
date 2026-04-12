@@ -1,22 +1,29 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { useOrder } from "@/context/OrderContext";
 import { CheckIcon } from "@/components/icons";
 import { formatCurrency } from "@/lib/utils";
 
 export function OrderConfirmation() {
   const { state, dispatch, totalItems, totalCost } = useOrder();
+  const [showConfirm, setShowConfirm] = useState(false);
+
+  const handleConfirmReset = () => {
+    dispatch({ type: "RESET_ORDER" });
+    setShowConfirm(false);
+  };
 
   return (
-    <div className="flex flex-col items-center text-center py-8">
+    <div className="relative flex flex-col items-center text-center py-8">
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        className="mb-6 flex h-20 w-20 items-center justify-center rounded-full border border-gold/30 bg-gold/10"
+        className="mb-6 flex h-20 w-20 items-center justify-center rounded-full border border-forest/30 bg-forest/10"
       >
-        <CheckIcon size={36} className="text-gold" />
+        <CheckIcon size={36} className="text-forest" />
       </motion.div>
 
       <motion.div
@@ -66,7 +73,7 @@ export function OrderConfirmation() {
             <span className="text-xs font-medium text-silver">
               {totalItems} items
             </span>
-            <span className="text-sm font-semibold text-gold">
+            <span className="text-sm font-semibold text-forest">
               {formatCurrency(totalCost)}
             </span>
           </div>
@@ -78,12 +85,63 @@ export function OrderConfirmation() {
         </p>
 
         <button
-          onClick={() => dispatch({ type: "RESET_ORDER" })}
-          className="mt-6 rounded-lg border border-slate bg-transparent px-6 py-2.5 text-sm font-medium text-silver transition-colors hover:border-gold hover:text-ivory"
+          onClick={() => setShowConfirm(true)}
+          className="mt-6 rounded-lg border border-slate bg-transparent px-6 py-2.5 text-sm font-medium text-silver transition-colors hover:border-forest hover:text-ivory"
         >
           Start New Order
         </button>
       </motion.div>
+
+      {/* Confirmation dialog */}
+      <AnimatePresence>
+        {showConfirm && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.15 }}
+            onClick={() => setShowConfirm(false)}
+            className="absolute inset-0 z-10 flex items-center justify-center bg-midnight/80 backdrop-blur-sm"
+          >
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
+              onClick={(e) => e.stopPropagation()}
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="reset-order-title"
+              className="mx-4 max-w-sm rounded-xl border border-graphite bg-charcoal p-6 text-center shadow-2xl"
+            >
+              <h4
+                id="reset-order-title"
+                className="font-display text-lg font-semibold text-ivory"
+              >
+                Start a new order?
+              </h4>
+              <p className="mt-2 text-xs text-silver">
+                This will clear your current order details and all items from
+                your cart. This cannot be undone.
+              </p>
+              <div className="mt-5 flex gap-2">
+                <button
+                  onClick={() => setShowConfirm(false)}
+                  className="flex-1 rounded-lg border border-slate bg-transparent px-4 py-2.5 text-xs font-medium text-silver transition-colors hover:border-forest/40 hover:text-ivory"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={handleConfirmReset}
+                  className="flex-1 rounded-lg bg-forest px-4 py-2.5 text-xs font-semibold text-ivory transition-colors hover:bg-emerald"
+                >
+                  Start New Order
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

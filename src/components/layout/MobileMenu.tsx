@@ -61,7 +61,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                   className={cn(
                     "rounded-lg px-4 py-3 text-base font-medium transition-colors",
                     pathname === link.href
-                      ? "bg-gold/10 text-gold"
+                      ? "bg-forest/10 text-forest"
                       : "text-silver hover:bg-graphite hover:text-ivory"
                   )}
                 >
@@ -77,7 +77,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               <Link
                 href="/#catalog"
                 onClick={onClose}
-                className="block rounded-lg bg-gold px-4 py-3 text-center text-sm font-semibold text-ivory transition-colors hover:bg-champagne"
+                className="block rounded-lg bg-forest px-4 py-3 text-center text-sm font-semibold text-ivory transition-colors hover:bg-emerald"
               >
                 Start Order Request
               </Link>

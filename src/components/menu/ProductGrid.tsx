@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { staggerContainer } from "@/lib/animations";
 import { ProductCard } from "./ProductCard";
 import { ProductModal } from "./ProductModal";
@@ -45,12 +45,15 @@ export function ProductGrid({ products }: ProductGridProps) {
         ))}
       </motion.div>
 
-      {selectedProduct && (
-        <ProductModal
-          product={selectedProduct}
-          onClose={() => setSelectedProduct(null)}
-        />
-      )}
+      <AnimatePresence>
+        {selectedProduct && (
+          <ProductModal
+            key={selectedProduct.id}
+            product={selectedProduct}
+            onClose={() => setSelectedProduct(null)}
+          />
+        )}
+      </AnimatePresence>
     </>
   );
 }

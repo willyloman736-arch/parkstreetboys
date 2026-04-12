@@ -32,13 +32,13 @@ type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    "bg-gold text-ivory hover:bg-champagne active:bg-gold-muted font-semibold",
+    "bg-forest text-ivory hover:bg-emerald active:bg-forest-deep font-semibold",
   secondary:
     "bg-graphite text-ivory hover:bg-slate border border-slate/50 font-medium",
   ghost:
     "bg-transparent text-pearl hover:text-ivory hover:bg-graphite/50 font-medium",
   outline:
-    "bg-transparent text-gold border border-gold/50 hover:border-gold hover:bg-gold/10 font-medium",
+    "bg-transparent text-forest border border-forest/50 hover:border-forest hover:bg-forest/10 font-medium",
 };
 
 const sizeStyles: Record<ButtonSize, string> = {

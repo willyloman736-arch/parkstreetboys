@@ -8,6 +8,7 @@ import { Badge } from "@/components/shared/Badge";
 import { QuantitySelector } from "@/components/shared/QuantitySelector";
 import { Tilt3D } from "@/components/shared/Tilt3D";
 import { useOrder } from "@/context/OrderContext";
+import { useIsTouchDevice } from "@/lib/useIsTouchDevice";
 import { formatCurrency } from "@/lib/utils";
 import type { Product } from "@/types";
 
@@ -30,27 +31,34 @@ const categoryIcons: Record<string, string> = {
 export function ProductCard({ product, onClick }: ProductCardProps) {
   const { addToOrder, removeFromOrder, updateQuantity, isInOrder, getItemQuantity } =
     useOrder();
+  const isTouch = useIsTouchDevice();
   const inOrder = isInOrder(product.id);
   const qty = getItemQuantity(product.id);
   const [showVideo, setShowVideo] = useState(false);
   const [showSecondImg, setShowSecondImg] = useState(false);
   const [imgError, setImgError] = useState(false);
   const hasRealImage = product.imageUrl && !product.imageUrl.includes("prod-");
-  const hasVideo = !!product.videoUrl;
-  const hasSecondImage = !!product.imageUrl2;
+  // Hover-driven media previews only make sense with a fine pointer. On touch
+  // devices the user should tap to open the modal, not try to hover.
+  const hasVideo = !!product.videoUrl && !isTouch;
+  const hasSecondImage = !!product.imageUrl2 && !isTouch;
 
   return (
     <motion.div variants={staggerChild}>
     <Tilt3D
-      intensity={8}
-      scale={1.02}
+      intensity={isTouch ? 0 : 8}
+      scale={isTouch ? 1 : 1.02}
       onClick={onClick}
-      className="relative group flex flex-col overflow-hidden rounded-xl border border-graphite bg-charcoal transition-colors hover:border-gold/20 cursor-pointer h-full"
+      className="relative group flex flex-col overflow-hidden rounded-xl border border-graphite bg-charcoal transition-colors hover:border-forest/20 cursor-pointer h-full"
     >
       {/* Media area */}
       <div
         className="relative aspect-[4/3] overflow-hidden bg-graphite"
-        onMouseEnter={() => { if (hasVideo) setShowVideo(true); else if (hasSecondImage) setShowSecondImg(true); }}
+        onMouseEnter={() => {
+          if (isTouch) return;
+          if (hasVideo) setShowVideo(true);
+          else if (hasSecondImage) setShowSecondImg(true);
+        }}
         onMouseLeave={() => { setShowVideo(false); setShowSecondImg(false); }}
       >
         {/* Product image or placeholder */}
@@ -99,7 +107,7 @@ export function ProductCard({ product, onClick }: ProductCardProps) {
 
         {/* Badges */}
         <div className="absolute top-2.5 left-2.5 flex gap-1.5 z-10">
-          <Badge variant="gold" className="text-[10px]">
+          <Badge variant="forest" className="text-[10px]">
             {product.subcategory}
           </Badge>
           {product.smellRating && (
@@ -141,7 +149,7 @@ export function ProductCard({ product, onClick }: ProductCardProps) {
         {/* Hover overlay */}
         {product.inStock && !showVideo && (
           <div className="absolute inset-0 flex items-center justify-center bg-midnight/0 transition-colors group-hover:bg-midnight/40 z-10">
-            <span className="scale-90 rounded-lg bg-gold px-4 py-2 text-xs font-semibold text-ivory opacity-0 transition-all group-hover:scale-100 group-hover:opacity-100">
+            <span className="scale-90 rounded-lg bg-forest px-4 py-2 text-xs font-semibold text-ivory opacity-0 transition-all group-hover:scale-100 group-hover:opacity-100">
               {inOrder ? "In Your Order" : "Quick Add"}
             </span>
           </div>
@@ -167,7 +175,7 @@ export function ProductCard({ product, onClick }: ProductCardProps) {
         {/* Price + Action */}
         <div className="mt-auto pt-3">
           <div className="flex items-center justify-between">
-            <span className="text-lg font-semibold text-gold">
+            <span className="text-lg font-semibold text-forest">
               {formatCurrency(product.unitPrice)}
             </span>
             <span className="text-[10px] text-ash">per unit</span>
@@ -192,7 +200,7 @@ export function ProductCard({ product, onClick }: ProductCardProps) {
               ) : (
                 <button
                   onClick={() => addToOrder(product)}
-                  className="w-full rounded-lg border border-slate bg-transparent py-2 text-xs font-medium text-silver transition-all hover:border-gold hover:bg-gold hover:text-ivory"
+                  className="w-full rounded-lg border border-slate bg-transparent py-2 text-xs font-medium text-silver transition-all hover:border-forest hover:bg-forest hover:text-ivory"
                 >
                   Add to Order
                 </button>

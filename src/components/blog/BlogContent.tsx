@@ -33,7 +33,7 @@ export function BlogContent() {
           animate="visible"
           className="mb-10"
         >
-          <span className="mb-3 block text-xs font-semibold uppercase tracking-[0.2em] text-gold">
+          <span className="mb-3 block text-xs font-semibold uppercase tracking-[0.2em] text-forest">
             Insights & Education
           </span>
           <h1 className="font-display text-3xl font-bold text-ivory sm:text-4xl lg:text-5xl">

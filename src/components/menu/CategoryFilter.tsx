@@ -30,8 +30,8 @@ export function CategoryFilter({ active, onChange }: CategoryFilterProps) {
           className={cn(
             "shrink-0 rounded-full px-3 py-1.5 text-[11px] font-medium tracking-wide transition-all duration-300 whitespace-nowrap",
             active === opt.id
-              ? "bg-gold text-ivory"
-              : "border border-slate bg-transparent text-silver hover:border-gold/40 hover:text-ivory"
+              ? "bg-forest text-ivory"
+              : "border border-slate bg-transparent text-silver hover:border-forest/40 hover:text-ivory"
           )}
         >
           {opt.label}

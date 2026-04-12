@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# source files not needed in repo
+Pack-Street-Boys-Logo.webp
+parkstreet boys hero video.mp4
+hero video 2.mp4
+ui-ux-pro-max-skill-main.zip
