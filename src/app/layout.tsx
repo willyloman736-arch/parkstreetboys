@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
 import { playfair, inter } from "@/lib/fonts";
 import { OrderProvider } from "@/context/OrderContext";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
-import { AgeVerificationModal } from "@/components/shared/AgeVerificationModal";
-import { OrderDrawer } from "@/components/order/OrderDrawer";
-import { TelegramChat } from "@/components/shared/TelegramChat";
+import { AppShell } from "@/components/layout/AppShell";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -42,12 +38,7 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col">
         <OrderProvider>
-          <AgeVerificationModal />
-          <Navbar />
-          <main className="flex-1">{children}</main>
-          <Footer />
-          <OrderDrawer />
-          <TelegramChat />
+          <AppShell>{children}</AppShell>
         </OrderProvider>
       </body>
     </html>
