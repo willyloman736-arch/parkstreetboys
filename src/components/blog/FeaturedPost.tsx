@@ -25,7 +25,7 @@ export function FeaturedPost({ post }: FeaturedPostProps) {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="group relative overflow-hidden rounded-2xl border border-graphite bg-charcoal"
+      className="group relative overflow-hidden rounded-2xl border border-graphite glass-dark"
     >
       <div className="grid gap-0 md:grid-cols-2">
         {/* Image placeholder */}

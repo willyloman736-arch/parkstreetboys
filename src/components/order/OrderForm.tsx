@@ -175,10 +175,10 @@ function Field({
   multiline?: boolean;
 }) {
   const classes =
-    "w-full rounded-lg border bg-midnight/50 px-3 py-2.5 text-sm text-pearl placeholder:text-ash transition-colors focus:outline-none " +
+    "w-full rounded-lg px-3 py-2.5 text-sm text-pearl placeholder:text-ash focus:outline-none " +
     (error
-      ? "border-red-500/50 focus:border-red-500"
-      : "border-slate focus:border-forest/50");
+      ? "glass-input border-red-500/50 focus:border-red-500"
+      : "glass-input");
 
   return (
     <div>

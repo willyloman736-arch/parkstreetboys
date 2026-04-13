@@ -44,7 +44,7 @@ export function AgeVerificationModal() {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="mx-4 w-full max-w-md rounded-2xl border border-graphite bg-charcoal p-8 text-center shadow-2xl sm:p-10"
+            className="mx-4 w-full max-w-md rounded-2xl border border-graphite glass-dark p-8 text-center shadow-2xl sm:p-10"
           >
             {/* Logo / Brand */}
             <div className="mb-6">

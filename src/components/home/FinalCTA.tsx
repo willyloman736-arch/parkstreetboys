@@ -15,7 +15,7 @@ export function FinalCTA() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="relative overflow-hidden rounded-2xl border border-forest/20 bg-charcoal p-10 text-center sm:p-16 lg:p-20"
+          className="relative overflow-hidden rounded-2xl border border-forest/20 glass-dark p-10 text-center sm:p-16 lg:p-20"
         >
           <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_center,_var(--color-forest)_0%,_transparent_70%)]" style={{ opacity: 0.05 }} />
 

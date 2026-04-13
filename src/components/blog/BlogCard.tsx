@@ -24,7 +24,7 @@ export function BlogCard({ post }: BlogCardProps) {
       variants={staggerChild}
       whileHover={{ y: -3 }}
       transition={{ duration: 0.2 }}
-      className="group flex flex-col overflow-hidden rounded-xl border border-graphite bg-charcoal transition-colors hover:border-forest/20"
+      className="group flex flex-col overflow-hidden rounded-xl border border-graphite glass-dark transition-colors hover:border-forest/20"
     >
       {/* Image placeholder */}
       <div className="relative aspect-[16/10] overflow-hidden bg-graphite">

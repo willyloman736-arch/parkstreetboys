@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { playfair, inter } from "@/lib/fonts";
 import { OrderProvider } from "@/context/OrderContext";
 import { AppShell } from "@/components/layout/AppShell";
+import { GlassTracker } from "@/components/shared/GlassTracker";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -38,6 +39,7 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col">
         <OrderProvider>
+          <GlassTracker />
           <AppShell>{children}</AppShell>
         </OrderProvider>
       </body>

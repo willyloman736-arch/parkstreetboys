@@ -37,7 +37,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="fixed top-0 left-0 bottom-0 z-50 w-72 border-r border-graphite bg-charcoal p-6 md:hidden"
+            className="fixed top-0 left-0 bottom-0 z-50 w-72 glass-dark border-r border-graphite p-6 md:hidden"
           >
             <div className="mb-8 flex items-center justify-between">
               <span className="font-display text-lg font-semibold text-ivory">

@@ -30,7 +30,7 @@ export function SearchBar({ value, onChange }: SearchBarProps) {
         placeholder="Search products..."
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full rounded-lg border border-slate bg-charcoal py-2.5 pl-10 pr-9 text-sm text-pearl placeholder:text-ash transition-colors focus:border-forest/50 focus:outline-none sm:w-64"
+        className="w-full rounded-lg glass-input py-2.5 pl-10 pr-9 text-sm text-pearl placeholder:text-ash transition-colors focus:border-forest/50 focus:outline-none sm:w-64"
       />
       {hasValue && (
         <button

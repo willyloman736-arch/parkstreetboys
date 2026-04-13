@@ -51,7 +51,7 @@ export function OrderDrawer() {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="fixed top-0 right-0 bottom-0 z-50 flex w-full max-w-md flex-col border-l border-forest/10 bg-charcoal shadow-2xl"
+            className="fixed top-0 right-0 bottom-0 z-50 flex w-full max-w-md flex-col border-l border-forest/10 glass-dark shadow-2xl"
           >
             {/* Header */}
             <div className="flex items-center justify-between border-b border-graphite px-5 py-4">
