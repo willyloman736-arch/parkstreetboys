@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { products } from "@/data/products";
 
 const TELEGRAM_LINK = "https://t.me/+6RosP2ItBko2ODFh";
+const POTATO_LINK = "https://tutuduanyu.org/parkstreetboyswholesale";
 const META_PIXEL_ID = ""; // ← paste your Meta Pixel ID here
 
 // Top-tier products to feature as "deals"
@@ -227,6 +228,38 @@ export default function DealsPage() {
             <br className="hidden sm:inline" /> Limited stock — tap below to browse.
           </p>
 
+          {/* CTA Buttons — side by side */}
+          <div className="mt-6 grid grid-cols-2 gap-3">
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.97 }}
+              onClick={handleCTAClick}
+              className="flex items-center justify-center gap-2 rounded-xl bg-white py-3.5 text-xs font-bold text-[#020205] shadow-lg shadow-white/10 transition-all hover:shadow-xl hover:shadow-white/15 sm:rounded-2xl sm:text-sm"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.94 8.22l-1.97 9.28c-.15.68-.54.85-1.09.53l-3.01-2.22-1.45 1.4c-.16.16-.3.3-.61.3l.22-3.05 5.56-5.02c.24-.22-.05-.33-.38-.13L8.69 13.5l-2.93-.91c-.64-.2-.65-.64.13-.95l11.45-4.41c.53-.19 1 .13.83.95l-.23.04z" />
+              </svg>
+              Telegram
+            </motion.button>
+
+            <motion.a
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.97 }}
+              href={POTATO_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackEvent("Lead")}
+              className="flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.06] py-3.5 text-xs font-bold text-white shadow-lg shadow-black/20 backdrop-blur-md transition-all hover:bg-white/[0.1] sm:rounded-2xl sm:text-sm"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+              Potato
+            </motion.a>
+          </div>
+
           {/* Deal cards — 2-column grid */}
           <motion.div
             variants={stagger}
@@ -279,26 +312,8 @@ export default function DealsPage() {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.97 }}
-            onClick={handleCTAClick}
-            className="mt-6 flex w-full items-center justify-center gap-3 rounded-xl bg-white py-4 text-sm font-bold text-[#020205] shadow-lg shadow-white/10 transition-all hover:shadow-xl hover:shadow-white/15 sm:rounded-2xl"
-          >
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.94 8.22l-1.97 9.28c-.15.68-.54.85-1.09.53l-3.01-2.22-1.45 1.4c-.16.16-.3.3-.61.3l.22-3.05 5.56-5.02c.24-.22-.05-.33-.38-.13L8.69 13.5l-2.93-.91c-.64-.2-.65-.64.13-.95l11.45-4.41c.53-.19 1 .13.83.95l-.23.04z" />
-            </svg>
-            View Exclusive Deals on Telegram
-          </motion.button>
-
           <p className="mt-3 text-center text-[10px] text-white/30">
-            Tap the button above to open our Telegram channel
+            Tap a button above to browse our full menu
           </p>
         </motion.div>
 
