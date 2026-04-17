@@ -38,10 +38,13 @@ export function ProductCard({ product, onClick }: ProductCardProps) {
   const [showSecondImg, setShowSecondImg] = useState(false);
   const [imgError, setImgError] = useState(false);
   const hasRealImage = product.imageUrl && !product.imageUrl.includes("prod-");
+  // Data flags — use these for the media badges so they show on mobile too.
+  const hasVideoMedia = !!product.videoUrl;
+  const hasSecondImageMedia = !!product.imageUrl2;
   // Hover-driven media previews only make sense with a fine pointer. On touch
   // devices the user should tap to open the modal, not try to hover.
-  const hasVideo = !!product.videoUrl && !isTouch;
-  const hasSecondImage = !!product.imageUrl2 && !isTouch;
+  const hasVideo = hasVideoMedia && !isTouch;
+  const hasSecondImage = hasSecondImageMedia && !isTouch;
 
   return (
     <motion.div variants={staggerChild}>
@@ -118,23 +121,24 @@ export function ProductCard({ product, onClick }: ProductCardProps) {
         </div>
 
         {/* Video indicator */}
-        {hasVideo && !showVideo && (
-          <div className="absolute top-2.5 right-2.5 flex h-6 w-6 items-center justify-center rounded-full bg-midnight/60 backdrop-blur-sm z-10">
+        {hasVideoMedia && !showVideo && (
+          <div className="absolute top-2.5 right-2.5 flex h-6 items-center gap-1 rounded-full bg-forest/90 px-2 ring-1 ring-white/25 shadow-md shadow-black/40 backdrop-blur-sm z-10">
             <svg width="10" height="10" viewBox="0 0 10 10" fill="white">
               <polygon points="2,0 10,5 2,10" />
             </svg>
+            <span className="text-[9px] font-semibold uppercase tracking-wider text-white">Video</span>
           </div>
         )}
 
         {/* Multi-image indicator */}
-        {hasSecondImage && !hasVideo && (
-          <div className="absolute top-2.5 right-2.5 flex h-6 items-center gap-1 rounded-full bg-midnight/60 px-2 backdrop-blur-sm z-10">
+        {hasSecondImageMedia && !hasVideoMedia && (
+          <div className="absolute top-2.5 right-2.5 flex h-6 items-center gap-1 rounded-full bg-forest/90 px-2 ring-1 ring-white/25 shadow-md shadow-black/40 backdrop-blur-sm z-10">
             <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
               <rect x="3" y="3" width="18" height="18" rx="2" />
               <circle cx="8.5" cy="8.5" r="1.5" />
               <path d="M21 15l-5-5L5 21" />
             </svg>
-            <span className="text-[9px] text-white font-medium">2</span>
+            <span className="text-[9px] font-semibold text-white">2</span>
           </div>
         )}
 
