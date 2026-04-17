@@ -53,7 +53,7 @@ export function ProductCard({ product, onClick }: ProductCardProps) {
     >
       {/* Media area */}
       <div
-        className="relative aspect-[4/3] overflow-hidden bg-graphite"
+        className="relative aspect-square overflow-hidden bg-graphite sm:aspect-[4/3]"
         onMouseEnter={() => {
           if (isTouch) return;
           if (hasVideo) setShowVideo(true);
@@ -157,32 +157,32 @@ export function ProductCard({ product, onClick }: ProductCardProps) {
       </div>
 
       {/* Info */}
-      <div className="flex flex-1 flex-col p-4">
-        <p className="text-[10px] font-medium uppercase tracking-widest text-ash">
+      <div className="flex flex-1 flex-col p-2.5 sm:p-4">
+        <p className="hidden text-[10px] font-medium uppercase tracking-widest text-ash sm:block">
           {product.brand} · {product.origin}
         </p>
-        <h3 className="mt-1 font-display text-sm font-semibold text-ivory line-clamp-1">
+        <h3 className="font-display text-[13px] font-semibold text-ivory line-clamp-1 sm:mt-1 sm:text-sm">
           {product.name}
         </h3>
-        <p className="mt-1 text-xs text-silver line-clamp-2">
+        <p className="mt-1 hidden text-xs text-silver line-clamp-2 sm:block">
           {product.description}
         </p>
-        <p className="mt-1 text-[10px] text-ash">
+        <p className="mt-0.5 text-[10px] text-ash sm:mt-1">
           {product.volume}
           {product.caseSize > 1 ? ` · Case of ${product.caseSize}` : ""}
         </p>
 
         {/* Price + Action */}
-        <div className="mt-auto pt-3">
-          <div className="flex items-center justify-between">
-            <span className="text-lg font-semibold text-forest">
+        <div className="mt-auto pt-2 sm:pt-3">
+          <div className="flex items-baseline justify-between gap-1">
+            <span className="text-base font-semibold text-forest sm:text-lg">
               {formatCurrency(product.unitPrice)}
             </span>
-            <span className="text-[10px] text-ash">per unit</span>
+            <span className="text-[9px] text-ash sm:text-[10px]">per unit</span>
           </div>
 
           {product.inStock && (
-            <div className="mt-2.5" onClick={(e) => e.stopPropagation()}>
+            <div className="mt-2" onClick={(e) => e.stopPropagation()}>
               {inOrder ? (
                 <div className="flex items-center justify-between gap-2">
                   <QuantitySelector
@@ -200,7 +200,7 @@ export function ProductCard({ product, onClick }: ProductCardProps) {
               ) : (
                 <button
                   onClick={() => addToOrder(product)}
-                  className="w-full rounded-lg border border-slate bg-transparent py-2 text-xs font-medium text-silver transition-all hover:border-forest hover:bg-forest hover:text-ivory"
+                  className="w-full rounded-lg border border-slate bg-transparent py-1.5 text-[11px] font-medium text-silver transition-all hover:border-forest hover:bg-forest hover:text-ivory sm:py-2 sm:text-xs"
                 >
                   Add to Order
                 </button>

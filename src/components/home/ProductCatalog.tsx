@@ -62,6 +62,14 @@ export function ProductCatalog() {
         break;
     }
 
+    // Always float products with videos to the top, preserving the sort
+    // order above within each group (stable sort).
+    result = [...result].sort((a, b) => {
+      const aHas = a.videoUrl ? 1 : 0;
+      const bHas = b.videoUrl ? 1 : 0;
+      return bHas - aHas;
+    });
+
     return result;
   }, [activeCategory, searchQuery, sortBy]);
 
