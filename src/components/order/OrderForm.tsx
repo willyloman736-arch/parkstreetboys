@@ -177,8 +177,8 @@ function Field({
   const classes =
     "w-full rounded-lg px-3 py-2.5 text-sm text-pearl placeholder:text-ash focus:outline-none " +
     (error
-      ? "glass-input border-red-500/50 focus:border-red-500"
-      : "glass-input");
+      ? "glass-input backdrop-blur-sm border-red-500/50 focus:border-red-500"
+      : "glass-input backdrop-blur-sm");
 
   return (
     <div>

@@ -53,7 +53,7 @@ function AnimatedCounter({
 
 export function TrustSection() {
   return (
-    <section className="border-y border-graphite glass-dark py-20 lg:py-24">
+    <section className="border-y border-graphite glass-dark backdrop-blur-xl py-20 lg:py-24">
       <Container>
         <motion.div
           variants={staggerContainer}

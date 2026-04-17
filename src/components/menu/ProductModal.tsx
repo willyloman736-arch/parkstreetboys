@@ -67,7 +67,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
         animate="visible"
         exit="exit"
         onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-2xl border border-graphite glass-dark shadow-2xl"
+        className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-2xl border border-graphite glass-dark backdrop-blur-xl shadow-2xl"
       >
         {/* Close button */}
         <button

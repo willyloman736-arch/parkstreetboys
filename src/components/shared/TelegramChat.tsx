@@ -23,7 +23,7 @@ export function TelegramChat() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="mb-3 w-72 rounded-xl border border-graphite glass-dark shadow-2xl overflow-hidden"
+            className="mb-3 w-72 rounded-xl border border-graphite glass-dark backdrop-blur-xl shadow-2xl overflow-hidden"
           >
             {/* Header */}
             <div className="bg-forest/10 border-b border-graphite px-4 py-3">

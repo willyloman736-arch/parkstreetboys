@@ -42,7 +42,7 @@ export function CategoryShowcase() {
             <Tilt3D intensity={12} scale={1.03} className="rounded-xl">
               <Link
                 href={`/#catalog`}
-                className="group relative block overflow-hidden rounded-xl border border-graphite glass-dark p-6 transition-all duration-500 hover:border-forest/30 hover:bg-graphite/50"
+                className="group relative block overflow-hidden rounded-xl border border-graphite glass-dark backdrop-blur-xl p-6 transition-all duration-500 hover:border-forest/30 hover:bg-graphite/50"
               >
                 {/* Glow effect on hover */}
                 <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-gradient-to-br from-forest/5 via-transparent to-transparent" />

@@ -49,7 +49,7 @@ export function ProductCard({ product, onClick }: ProductCardProps) {
       intensity={isTouch ? 0 : 8}
       scale={isTouch ? 1 : 1.02}
       onClick={onClick}
-      className="relative group flex flex-col overflow-hidden rounded-xl border border-graphite glass-dark transition-colors hover:border-forest/20 cursor-pointer h-full"
+      className="relative group flex flex-col overflow-hidden rounded-xl border border-graphite glass-dark backdrop-blur-xl transition-colors hover:border-forest/20 cursor-pointer h-full"
     >
       {/* Media area */}
       <div

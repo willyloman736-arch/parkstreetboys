@@ -61,7 +61,7 @@ export function ValueProps() {
             {services.map((service) => (
               <motion.div key={service.title} variants={staggerChild}>
                 <Tilt3D intensity={6} scale={1.01} className="rounded-2xl h-full">
-                  <div className="h-full rounded-2xl border border-graphite glass-dark p-8">
+                  <div className="h-full rounded-2xl border border-graphite glass-dark backdrop-blur-xl p-8">
                     {/* Header */}
                     <div className="mb-6 flex items-center gap-4">
                       <div className="flex h-14 w-14 items-center justify-center rounded-xl border border-forest/20 bg-forest/10 text-2xl">

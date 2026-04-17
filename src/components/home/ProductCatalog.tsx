@@ -104,7 +104,7 @@ export function ProductCatalog() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="sticky top-[56px] z-30 -mx-4 mb-6 overflow-hidden border-b border-graphite glass-dark px-4 py-2.5 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8"
+          className="sticky top-[56px] z-30 -mx-4 mb-6 overflow-hidden border-b border-graphite glass-dark backdrop-blur-xl px-4 py-2.5 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8"
         >
           <div className="overflow-x-auto scrollbar-none">
             <CategoryFilter active={activeCategory} onChange={setActiveCategory} />

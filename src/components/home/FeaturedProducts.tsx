@@ -31,7 +31,7 @@ function FeaturedCard({ product }: { product: (typeof featured)[0] }) {
       variants={staggerChild}
       whileHover={{ y: -4 }}
       transition={{ duration: 0.2 }}
-      className="group overflow-hidden rounded-xl border border-graphite glass-dark transition-colors hover:border-forest/20"
+      className="group overflow-hidden rounded-xl border border-graphite glass-dark backdrop-blur-xl transition-colors hover:border-forest/20"
     >
       <div className="relative aspect-[4/3] overflow-hidden bg-graphite">
         {hasRealImage && !imgError ? (

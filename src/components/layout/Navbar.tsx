@@ -40,7 +40,7 @@ export function Navbar() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
-            ? "glass-dark py-2 sm:py-3"
+            ? "glass-dark backdrop-blur-xl py-2 sm:py-3"
             : "bg-gradient-to-b from-midnight/60 to-transparent backdrop-blur-sm py-2.5 sm:py-5"
         )}
       >
@@ -56,8 +56,32 @@ export function Navbar() {
               priority
             />
             <div className="flex flex-col">
-              <span className="font-display text-[13px] font-semibold leading-tight text-ivory sm:text-lg">
-                Park Street Boys
+              <span className="flex items-center gap-1.5">
+                <span className="font-display text-[13px] font-semibold leading-tight text-ivory sm:text-lg">
+                  Park Street Boys
+                </span>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  className="sm:h-4 sm:w-4 shrink-0"
+                  aria-label="Verified Vendor"
+                >
+                  <path
+                    d="M12 1l2.39 2.42L17.5 3l.42 3.12L21 8.5l-1.42 2.89L21 14.28l-3.08 2.38L17.5 19.78l-3.11.42L12 22.62l-2.39-2.42L6.5 19.78l-.42-3.12L3 14.28l1.42-2.89L3 8.5l3.08-2.38L6.5 3l3.11-.42L12 1z"
+                    fill="#1D9BF0"
+                    stroke="#1D9BF0"
+                    strokeWidth="0.5"
+                  />
+                  <path
+                    d="M9 12l2 2 4-4"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </span>
               <span className="text-[9px] font-medium uppercase tracking-[0.15em] text-forest sm:hidden">
                 Wholesale

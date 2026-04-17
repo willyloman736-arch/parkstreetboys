@@ -6,6 +6,7 @@ import { Footer } from "./Footer";
 import { AgeVerificationModal } from "@/components/shared/AgeVerificationModal";
 import { OrderDrawer } from "@/components/order/OrderDrawer";
 import { TelegramChat } from "@/components/shared/TelegramChat";
+import { AmbientBackground } from "@/components/shared/AmbientBackground";
 
 const BARE_ROUTES = ["/go", "/deals"];
 
@@ -19,9 +20,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
 
   return (
     <>
+      <AmbientBackground />
       <AgeVerificationModal />
       <Navbar />
-      <main className="flex-1">{children}</main>
+      <main className="relative z-10 flex-1">{children}</main>
       <Footer />
       <OrderDrawer />
       <TelegramChat />
