@@ -9,8 +9,6 @@ import { XIcon, VerifiedBadgeIcon } from "@/components/icons";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/#catalog", label: "Menu" },
-  { href: "/blog", label: "Blog" },
   { href: "/verified", label: "Verified", hasVerifiedBadge: true },
 ];
 
@@ -54,22 +52,22 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               </button>
             </div>
 
-            <div className="grid grid-cols-2 gap-3">
+            <div className="flex flex-col gap-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={onClose}
                   className={cn(
-                    "flex aspect-square flex-col items-center justify-center rounded-xl border text-sm font-medium transition-all",
+                    "rounded-lg px-4 py-3 text-base font-medium transition-colors",
                     pathname === link.href
-                      ? "border-forest/40 bg-forest/10 text-forest"
-                      : "border-graphite bg-black/30 text-silver hover:border-forest/30 hover:bg-forest/5 hover:text-ivory"
+                      ? "bg-forest/10 text-forest"
+                      : "text-silver hover:bg-graphite hover:text-ivory"
                   )}
                 >
-                  <span className="flex items-center gap-1.5">
+                  <span className="flex items-center gap-2">
                     {link.label}
-                    {link.hasVerifiedBadge && <VerifiedBadgeIcon size={16} />}
+                    {link.hasVerifiedBadge && <VerifiedBadgeIcon size={18} />}
                   </span>
                 </Link>
               ))}
