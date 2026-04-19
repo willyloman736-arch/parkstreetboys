@@ -4,8 +4,10 @@ import { useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { products } from "@/data/products";
+import { SocialLinks } from "@/components/shared/SocialLinks";
 
 const TELEGRAM_LINK = "https://t.me/+6RosP2ItBko2ODFh";
+const POTATO_LINK = "https://tutuduanyu.org/parkstreetboyswholesale";
 const META_PIXEL_ID = ""; // ← paste your Meta Pixel ID here
 
 // Pick 8 products with real images for the preview grid
@@ -198,6 +200,56 @@ export default function LandingPage() {
             <br className="hidden sm:inline" /> Delivered nationwide — tap below to browse.
           </p>
 
+          {/* CTA Buttons — side by side, highlighted */}
+          <div className="mt-6 grid grid-cols-2 gap-3">
+            {/* Telegram — Telegram blue gradient */}
+            <motion.button
+              whileHover={{ scale: 1.03, y: -1 }}
+              whileTap={{ scale: 0.97 }}
+              onClick={handleCTAClick}
+              className="relative flex items-center justify-center gap-2 overflow-hidden rounded-xl py-3.5 text-xs font-bold text-white shadow-lg shadow-[#229ED9]/40 transition-all hover:shadow-xl hover:shadow-[#229ED9]/60 sm:rounded-2xl sm:text-sm"
+              style={{
+                background:
+                  "linear-gradient(135deg, #2AABEE 0%, #229ED9 50%, #0088cc 100%)",
+              }}
+            >
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/25 via-transparent to-transparent"
+              />
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="relative z-10">
+                <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.94 8.22l-1.97 9.28c-.15.68-.54.85-1.09.53l-3.01-2.22-1.45 1.4c-.16.16-.3.3-.61.3l.22-3.05 5.56-5.02c.24-.22-.05-.33-.38-.13L8.69 13.5l-2.93-.91c-.64-.2-.65-.64.13-.95l11.45-4.41c.53-.19 1 .13.83.95l-.23.04z" />
+              </svg>
+              <span className="relative z-10">Telegram</span>
+            </motion.button>
+
+            {/* Potato — forest green gradient */}
+            <motion.a
+              whileHover={{ scale: 1.03, y: -1 }}
+              whileTap={{ scale: 0.97 }}
+              href={POTATO_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackEvent("Lead")}
+              className="relative flex items-center justify-center gap-2 overflow-hidden rounded-xl py-3.5 text-xs font-bold text-white shadow-lg shadow-emerald-500/30 transition-all hover:shadow-xl hover:shadow-emerald-500/50 sm:rounded-2xl sm:text-sm"
+              style={{
+                background:
+                  "linear-gradient(135deg, #40916c 0%, #2d6a4f 50%, #1b4332 100%)",
+              }}
+            >
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-transparent"
+              />
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="relative z-10">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+              <span className="relative z-10">Potato</span>
+            </motion.a>
+          </div>
+
           {/* Product preview grid */}
           <div className="mt-6 grid grid-cols-4 gap-2 sm:gap-3">
             {featured.map((product, i) => (
@@ -243,26 +295,8 @@ export default function LandingPage() {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.97 }}
-            onClick={handleCTAClick}
-            className="mt-6 flex w-full items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-forest to-emerald py-4 text-base font-semibold text-white shadow-lg shadow-forest/25 transition-shadow hover:shadow-xl hover:shadow-forest/30 sm:rounded-2xl sm:py-4.5"
-          >
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.94 8.22l-1.97 9.28c-.15.68-.54.85-1.09.53l-3.01-2.22-1.45 1.4c-.16.16-.3.3-.61.3l.22-3.05 5.56-5.02c.24-.22-.05-.33-.38-.13L8.69 13.5l-2.93-.91c-.64-.2-.65-.64.13-.95l11.45-4.41c.53-.19 1 .13.83.95l-.23.04z" />
-            </svg>
-            View Full Menu on Telegram
-          </motion.button>
-
-          <p className="mt-3 text-center text-[10px] text-white/30">
-            Tap the button above to open our Telegram channel
+          <p className="mt-5 text-center text-[10px] text-white/30">
+            Tap a button above to open our official menu
           </p>
         </motion.div>
 
@@ -321,15 +355,21 @@ export default function LandingPage() {
           </div>
         </motion.div>
 
-        {/* Bottom brand */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+        {/* Socials footer */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.5 }}
-          className="text-center text-[10px] text-white/20"
+          className="flex flex-col items-center gap-3"
         >
-          &copy; {new Date().getFullYear()} Park Street Boys Wholesale
-        </motion.p>
+          <p className="text-center text-[10px] font-semibold uppercase tracking-[0.2em] text-white/40">
+            Our Official Channels
+          </p>
+          <SocialLinks iconSize="sm" className="justify-center" />
+          <p className="mt-2 text-center text-[10px] text-white/20">
+            &copy; {new Date().getFullYear()} Park Street Boys Wholesale
+          </p>
+        </motion.div>
       </div>
     </div>
   );

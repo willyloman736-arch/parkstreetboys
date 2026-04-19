@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { products } from "@/data/products";
+import { SocialLinks } from "@/components/shared/SocialLinks";
 
 const TELEGRAM_LINK = "https://t.me/+6RosP2ItBko2ODFh";
 const POTATO_LINK = "https://tutuduanyu.org/parkstreetboyswholesale";
@@ -390,6 +391,22 @@ export default function DealsPage() {
               </div>
             ))}
           </div>
+        </motion.div>
+
+        {/* Socials footer */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7, duration: 0.5 }}
+          className="mt-8 flex flex-col items-center gap-3"
+        >
+          <p className="text-center text-[10px] font-semibold uppercase tracking-[0.2em] text-white/40">
+            Our Official Channels
+          </p>
+          <SocialLinks iconSize="sm" className="justify-center" />
+          <p className="mt-2 text-center text-[10px] text-white/20">
+            &copy; {new Date().getFullYear()} Park Street Boys Wholesale
+          </p>
         </motion.div>
       </div>
     </div>
