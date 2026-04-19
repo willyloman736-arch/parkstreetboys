@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/components/shared/Container";
+import { SocialLinks } from "@/components/shared/SocialLinks";
 import { siteConfig } from "@/data/site-config";
 
 const footerLinks = {
@@ -47,7 +48,13 @@ export function Footer() {
               {siteConfig.tagline}. Serving licensed businesses with competitive
               pricing and curated selections.
             </p>
-            <p className="text-xs text-ash">{siteConfig.address}</p>
+            <p className="mb-5 text-xs text-ash">{siteConfig.address}</p>
+            <div>
+              <h3 className="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-ivory">
+                Follow Us
+              </h3>
+              <SocialLinks iconSize="sm" />
+            </div>
           </div>
 
           {/* Catalog */}

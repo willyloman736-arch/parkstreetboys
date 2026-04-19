@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer, staggerChild } from "@/lib/animations";
 import { Container } from "@/components/shared/Container";
+import { SocialLinks } from "@/components/shared/SocialLinks";
 import { VerifiedBadgeIcon } from "@/components/icons";
 
 export default function VerifiedPage() {
@@ -28,7 +29,7 @@ export default function VerifiedPage() {
             </p>
           </motion.div>
 
-          {/* Content placeholder — user will provide content */}
+          {/* Profile card */}
           <motion.div
             variants={staggerChild}
             className="rounded-2xl border border-graphite bg-charcoal/60 p-10 text-center backdrop-blur-sm"
@@ -42,8 +43,23 @@ export default function VerifiedPage() {
               <VerifiedBadgeIcon size={20} />
             </div>
             <p className="mx-auto mt-6 max-w-md text-silver">
-              Content coming soon. This page will showcase our verification credentials and trusted seller status.
+              Connect with us on our official, verified channels below. These
+              are the only accounts we operate — anything else is not us.
             </p>
+          </motion.div>
+
+          {/* Socials card */}
+          <motion.div
+            variants={staggerChild}
+            className="mt-6 rounded-2xl border border-graphite bg-charcoal/60 p-8 backdrop-blur-sm"
+          >
+            <h3 className="mb-2 text-center text-xs font-semibold uppercase tracking-[0.2em] text-forest">
+              Official Channels
+            </h3>
+            <p className="mx-auto mb-6 max-w-md text-center text-sm text-silver">
+              Tap any icon to open our verified account on that platform.
+            </p>
+            <SocialLinks className="justify-center" showLabels />
           </motion.div>
         </motion.div>
       </Container>
