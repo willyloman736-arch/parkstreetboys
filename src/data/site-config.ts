@@ -8,11 +8,11 @@ export const siteConfig: SiteConfig = {
   contactEmail: "orders@parkstreetboyswholesale.com",
   contactPhone: "(555) 800-7275",
   address: "New York, NY",
-  telegramHandle: "parkstreetboys",
+  telegramHandle: "parkstreetboysla",
 };
 
 // Derived helper — use throughout the app instead of hardcoding the URL
 export const TELEGRAM_HANDLE = siteConfig.telegramHandle;
-export const TELEGRAM_URL = `https://t.me/${siteConfig.telegramHandle}`;
+export const TELEGRAM_URL = "https://t.me/+dWnRfVfuuqllNGRk";
 export const telegramUrlWithText = (text: string) =>
-  `https://t.me/${siteConfig.telegramHandle}?text=${encodeURIComponent(text)}`;
+  `https://t.me/+dWnRfVfuuqllNGRk?text=${encodeURIComponent(text)}`;

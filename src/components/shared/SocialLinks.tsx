@@ -14,7 +14,7 @@ export const socialLinks = [
   },
   {
     label: "Telegram",
-    href: "https://t.me/+6RosP2ItBko2ODFh",
+    href: "https://t.me/+dWnRfVfuuqllNGRk",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.94 8.22l-1.97 9.28c-.15.68-.54.85-1.09.53l-3.01-2.22-1.45 1.4c-.16.16-.3.3-.61.3l.22-3.05 5.56-5.02c.24-.22-.05-.33-.38-.13L8.69 13.5l-2.93-.91c-.64-.2-.65-.64.13-.95l11.45-4.41c.53-.19 1 .13.83.95l-.23.04z" />

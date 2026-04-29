@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { products } from "@/data/products";
 import { SocialLinks } from "@/components/shared/SocialLinks";
 
-const TELEGRAM_LINK = "https://t.me/+6RosP2ItBko2ODFh";
+const TELEGRAM_LINK = "https://t.me/+dWnRfVfuuqllNGRk";
 const POTATO_LINK = "https://tutuduanyu.org/parkstreetboyswholesale";
 const META_PIXEL_ID = ""; // ← paste your Meta Pixel ID here
 
