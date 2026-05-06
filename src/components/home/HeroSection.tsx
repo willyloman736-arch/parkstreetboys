@@ -82,7 +82,7 @@ export function HeroSection() {
   return (
     <section
       ref={ref}
-      className="relative flex min-h-screen items-center justify-center overflow-hidden"
+      className="relative flex min-h-[85svh] md:min-h-screen items-center justify-center overflow-hidden"
     >
       {/* Video Background with parallax */}
       <motion.div style={{ y: bgY }} className="absolute inset-0 -z-10">
