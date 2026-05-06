@@ -8,15 +8,15 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://parkstreetboyswholesale.com"),
   title: {
-    default: "Park Street Boys Wholesale | Premium Spirits & Beverage Distribution",
-    template: "%s | Park Street Boys Wholesale",
+    default: "Pack Street Boys Wholesale | Premium Spirits & Beverage Distribution",
+    template: "%s | Pack Street Boys Wholesale",
   },
   description:
     "Premium wholesale distribution. Competitive pricing, fast delivery, and a curated catalog of top-shelf products.",
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Park Street Boys Wholesale",
+    siteName: "Pack Street Boys Wholesale",
   },
   twitter: {
     card: "summary_large_image",

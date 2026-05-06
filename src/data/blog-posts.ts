@@ -7,7 +7,7 @@ export const blogPosts: BlogPost[] = [
     title: "The Ultimate Guide to Wholesale Buying in 2025",
     excerpt:
       "Navigate the wholesale market with confidence. From understanding pricing tiers to building relationships with distributors, this comprehensive guide covers everything you need to know.",
-    author: "Park Street Boys Editorial",
+    author: "Pack Street Boys Editorial",
     publishedAt: "2025-12-15",
     coverImageUrl: "/images/blog/wholesale-guide.jpg",
     category: "business-tips",
@@ -21,7 +21,7 @@ export const blogPosts: BlogPost[] = [
     title: "Top 10 Indoor Strains Every Premium Buyer Needs to Know",
     excerpt:
       "From classic favorites to exotic newcomers, discover the indoor strains that are defining the premium market and driving customer loyalty in 2025.",
-    author: "Park Street Boys Editorial",
+    author: "Pack Street Boys Editorial",
     publishedAt: "2025-11-28",
     coverImageUrl: "/images/blog/indoor-strains.jpg",
     category: "product-spotlight",
@@ -35,7 +35,7 @@ export const blogPosts: BlogPost[] = [
     title: "Exotics Market Trends That Wholesale Buyers Can't Ignore",
     excerpt:
       "The exotics landscape is shifting rapidly. Learn about emerging varieties, regional preferences, and how to stock your inventory for maximum sell-through.",
-    author: "Park Street Boys Editorial",
+    author: "Pack Street Boys Editorial",
     publishedAt: "2025-11-10",
     coverImageUrl: "/images/blog/exotics-trends.jpg",
     category: "trends",
@@ -49,7 +49,7 @@ export const blogPosts: BlogPost[] = [
     title: "Moon Rocks: A Complete Breakdown for Wholesale Buyers",
     excerpt:
       "Moon Rocks continue to surge in popularity. Explore the different grades, production methods, and what to look for when stocking this premium category.",
-    author: "Park Street Boys Editorial",
+    author: "Pack Street Boys Editorial",
     publishedAt: "2025-10-22",
     coverImageUrl: "/images/blog/moon-rocks.jpg",
     category: "product-spotlight",
@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
     title: "Shipping & Handling Best Practices for Wholesale Orders",
     excerpt:
       "Proper shipping and handling ensures product quality and customer satisfaction. Learn about packaging standards, temperature control, and delivery best practices.",
-    author: "Park Street Boys Editorial",
+    author: "Pack Street Boys Editorial",
     publishedAt: "2025-10-05",
     coverImageUrl: "/images/blog/shipping-handling.jpg",
     category: "business-tips",
@@ -77,7 +77,7 @@ export const blogPosts: BlogPost[] = [
     title: "Wax Concentrates Face-Off: Shatter vs Budder vs Live Resin",
     excerpt:
       "We break down the differences between the top concentrate types — taste profiles, potency, price points, and wholesale value for buyers stocking their shelves.",
-    author: "Park Street Boys Editorial",
+    author: "Pack Street Boys Editorial",
     publishedAt: "2025-09-18",
     coverImageUrl: "/images/blog/wax-comparison.jpg",
     category: "product-spotlight",
@@ -91,7 +91,7 @@ export const blogPosts: BlogPost[] = [
     title: "Snow Cap Demand Is Surging: What to Stock for Maximum Sales",
     excerpt:
       "Frosty, trichome-heavy Snow Cap products are experiencing record demand. Learn which varieties to prioritize and how to manage your allocation strategy.",
-    author: "Park Street Boys Editorial",
+    author: "Pack Street Boys Editorial",
     publishedAt: "2025-09-01",
     coverImageUrl: "/images/blog/snow-cap.jpg",
     category: "trends",
@@ -105,7 +105,7 @@ export const blogPosts: BlogPost[] = [
     title: "The Shrooms Market: Emerging Opportunities for Wholesale",
     excerpt:
       "As the specialty mushroom market expands rapidly, wholesale buyers are discovering massive opportunity. Discover which product formats are growing fastest.",
-    author: "Park Street Boys Editorial",
+    author: "Pack Street Boys Editorial",
     publishedAt: "2025-08-14",
     coverImageUrl: "/images/blog/shrooms-market.jpg",
     category: "trends",
@@ -119,7 +119,7 @@ export const blogPosts: BlogPost[] = [
     title: "Quality Control: A Guide for New Wholesale Buyers",
     excerpt:
       "Understanding quality standards, lab testing results, and grading systems is critical for wholesale purchases. This guide simplifies the process for first-time buyers.",
-    author: "Park Street Boys Editorial",
+    author: "Pack Street Boys Editorial",
     publishedAt: "2025-07-28",
     coverImageUrl: "/images/blog/quality-guide.jpg",
     category: "business-tips",
@@ -133,7 +133,7 @@ export const blogPosts: BlogPost[] = [
     title: "Building Repeat Customers in the Wholesale Game",
     excerpt:
       "The key to wholesale success is retention. Learn proven strategies for keeping your buyers coming back, from consistency in quality to communication best practices.",
-    author: "Park Street Boys Editorial",
+    author: "Pack Street Boys Editorial",
     publishedAt: "2025-07-10",
     coverImageUrl: "/images/blog/repeat-customers.jpg",
     category: "business-tips",

@@ -35,13 +35,13 @@ export function Footer() {
             <div className="mb-4 flex items-center gap-2.5">
               <Image
                 src="/images/logo.webp"
-                alt="Park Street Boys"
+                alt="Pack Street Boys"
                 width={36}
                 height={36}
                 className="h-9 w-9 rounded-full object-contain"
               />
               <span className="font-display text-base font-semibold text-ivory">
-                Park Street Boys
+                Pack Street Boys
               </span>
             </div>
             <p className="mb-4 text-sm leading-relaxed text-silver">

@@ -171,7 +171,7 @@ export default function DealsPage() {
         >
           <Image
             src="/images/logo.webp"
-            alt="Park Street Boys"
+            alt="Pack Street Boys"
             width={72}
             height={72}
             className="h-18 w-18 rounded-full object-contain"
@@ -405,7 +405,7 @@ export default function DealsPage() {
           </p>
           <SocialLinks iconSize="sm" className="justify-center" />
           <p className="mt-2 text-center text-[10px] text-white/20">
-            &copy; {new Date().getFullYear()} Park Street Boys Wholesale
+            &copy; {new Date().getFullYear()} Pack Street Boys Wholesale
           </p>
         </motion.div>
       </div>

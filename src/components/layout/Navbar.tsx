@@ -49,7 +49,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/images/logo.webp"
-              alt="Park Street Boys"
+              alt="Pack Street Boys"
               width={40}
               height={40}
               className="h-8 w-8 rounded-full object-contain sm:h-10 sm:w-10"
@@ -58,7 +58,7 @@ export function Navbar() {
             <div className="flex flex-col">
               <span className="flex items-center gap-1.5">
                 <span className="font-display text-[13px] font-semibold leading-tight text-ivory sm:text-lg">
-                  Park Street Boys
+                  Pack Street Boys
                 </span>
                 <svg
                   width="14"

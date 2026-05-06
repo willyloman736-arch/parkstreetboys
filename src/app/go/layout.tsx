@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Park Street Boys | Official Menu",
+  title: "Pack Street Boys | Official Menu",
   description:
     "View our official wholesale menu. Premium curated exotics and top-shelf selections delivered nationwide. Verified vendor.",
   robots: { index: false, follow: false },

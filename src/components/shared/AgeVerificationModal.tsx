@@ -50,7 +50,7 @@ export function AgeVerificationModal() {
             <div className="mb-6">
               <Image
                 src="/images/logo.webp"
-                alt="Park Street Boys"
+                alt="Pack Street Boys"
                 width={72}
                 height={72}
                 className="mx-auto mb-4 h-[72px] w-[72px] rounded-full object-contain"

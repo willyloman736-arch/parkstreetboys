@@ -1,7 +1,7 @@
 import type { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
-  name: "Park Street Boys Wholesale",
+  name: "Pack Street Boys Wholesale",
   tagline: "Premium Wholesale Products",
   description:
     "Premium wholesale distribution. Competitive pricing, fast delivery, and a curated catalog of top-shelf products across 8 categories.",

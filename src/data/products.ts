@@ -7,7 +7,7 @@ export const products: Product[] = [
   {
     id: "prod-001",
     name: "SUPER STEAL",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "A no-brainer deal that delivers solid quality at an unbeatable price point.",
@@ -26,7 +26,7 @@ export const products: Product[] = [
   {
     id: "prod-002",
     name: "CITRUS OASIS",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A refreshing citrus-forward profile bursting with bright, zesty aromatics.",
@@ -45,7 +45,7 @@ export const products: Product[] = [
   {
     id: "prod-003",
     name: "SUPER MELTZ",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Dense trichome-coated buds that melt into smooth, flavorful clouds.",
@@ -64,7 +64,7 @@ export const products: Product[] = [
   {
     id: "prod-004",
     name: "FRUIT ROLL UPS (MOLDED)",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Sweet candy-like terps packed into a tight, colorful molded presentation.",
@@ -83,7 +83,7 @@ export const products: Product[] = [
   {
     id: "prod-005",
     name: "PURPLE SHERB",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "Top-shelf exotic with deep purple hues and an intensely sweet sherbet nose.",
@@ -102,7 +102,7 @@ export const products: Product[] = [
   {
     id: "prod-006",
     name: "BANANA BREATH",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Creamy banana undertones meet a gassy exhale for a unique flavor combination.",
@@ -121,7 +121,7 @@ export const products: Product[] = [
   {
     id: "prod-007",
     name: "SOUR SNEAKY",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A sneaky sour punch that creeps up with tangy, puckering terpenes.",
@@ -140,7 +140,7 @@ export const products: Product[] = [
   {
     id: "prod-008",
     name: "BLUEBERRY GUM POWDER",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Blueberry bubblegum sweetness dusted with a powdery, smooth finish.",
@@ -159,7 +159,7 @@ export const products: Product[] = [
   {
     id: "prod-009",
     name: "PURPLE PRESSUE",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Heavy-hitting purple buds that bring the pressure with dense, frosty coverage.",
@@ -178,7 +178,7 @@ export const products: Product[] = [
   {
     id: "prod-010",
     name: "ICE ICE BERRY",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Icy trichome coverage meets a sweet berry explosion on the palate.",
@@ -197,7 +197,7 @@ export const products: Product[] = [
   {
     id: "prod-011",
     name: "STRAWNANA BURSTZ",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "Exotic strawberry-banana terps that burst with tropical sweetness in every nug.",
@@ -216,7 +216,7 @@ export const products: Product[] = [
   {
     id: "prod-012",
     name: "LATO POP",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "A gelato-inspired exotic pop of creamy sweetness and stunning bag appeal.",
@@ -235,7 +235,7 @@ export const products: Product[] = [
   {
     id: "prod-013",
     name: "MORA FRESA",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A Latin-inspired berry blend with rich blackberry and strawberry terps.",
@@ -254,7 +254,7 @@ export const products: Product[] = [
   {
     id: "prod-014",
     name: "BLUEBERRY YUM YUM",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Classic blueberry goodness that tastes as good as it smells.",
@@ -273,7 +273,7 @@ export const products: Product[] = [
   {
     id: "prod-015",
     name: "APPLE BITES",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Crisp green apple flavors in a budget-friendly package that still delivers.",
@@ -292,7 +292,7 @@ export const products: Product[] = [
   {
     id: "prod-016",
     name: "DANK BUBBAS",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Dank, earthy bubba lineage with a heavy body and loud nose.",
@@ -311,7 +311,7 @@ export const products: Product[] = [
   {
     id: "prod-017",
     name: "BUBBA DELIGHT",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "A delightful bubba cross with sweet, kushy terps and a relaxing finish.",
@@ -330,7 +330,7 @@ export const products: Product[] = [
   {
     id: "prod-018",
     name: "STRAWBERRY FLAN",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Creamy strawberry custard terps with a rich, dessert-like exhale.",
@@ -349,7 +349,7 @@ export const products: Product[] = [
   {
     id: "prod-019",
     name: "RAINBOW PEZZ",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Candy-coated rainbow terps that pop with sweet, multi-fruit flavor.",
@@ -368,7 +368,7 @@ export const products: Product[] = [
   {
     id: "prod-020",
     name: "AMBROSIA",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "The nectar of the gods — a flawless exotic with heavenly aroma and appearance.",
@@ -391,7 +391,7 @@ export const products: Product[] = [
   {
     id: "prod-021",
     name: "ADL Candy",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A sweet candy-flavored indoor with vibrant colors and sugary terps.",
@@ -409,7 +409,7 @@ export const products: Product[] = [
   {
     id: "prod-022",
     name: "Animal Mintz",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Minty, gassy terps from the Animal Cookies lineage with a creamy finish.",
@@ -427,7 +427,7 @@ export const products: Product[] = [
   {
     id: "prod-023",
     name: "Apples and Bananas",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A fruity powerhouse crossing apple and banana terps into one aromatic profile.",
@@ -445,7 +445,7 @@ export const products: Product[] = [
   {
     id: "prod-024",
     name: "Atomic Belts",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Sour candy-inspired terps that hit with a tangy, atomic punch.",
@@ -463,7 +463,7 @@ export const products: Product[] = [
   {
     id: "prod-025",
     name: "Ben Franklin",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Named after the hundred-dollar bill, this zaa delivers premium value and smooth flavor.",
@@ -481,7 +481,7 @@ export const products: Product[] = [
   {
     id: "prod-026",
     name: "Berry Blast",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "An explosive exotic blend of mixed berry terps with deep purple coloring.",
@@ -499,7 +499,7 @@ export const products: Product[] = [
   {
     id: "prod-027",
     name: "Berry Latto Pop",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "A berry-gelato fusion with creamy sweetness and fruity undertones.",
@@ -517,7 +517,7 @@ export const products: Product[] = [
   {
     id: "prod-028",
     name: "Bigfoot",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Big, chunky buds with an earthy, piney aroma that stomps the competition.",
@@ -535,7 +535,7 @@ export const products: Product[] = [
   {
     id: "prod-029",
     name: "Biscotti",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "Premium exotic with rich cookie dough and almond terps inspired by Italian biscotti.",
@@ -553,7 +553,7 @@ export const products: Product[] = [
   {
     id: "prod-030",
     name: "Black Runtz",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Dark-hued runtz phenotype with sweet, fruity flavor on a budget.",
@@ -571,7 +571,7 @@ export const products: Product[] = [
   {
     id: "prod-031",
     name: "Blackberry Kush",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "A legendary exotic kush dripping with dark blackberry terps and heavy relaxation.",
@@ -588,7 +588,7 @@ export const products: Product[] = [
   {
     id: "prod-032",
     name: "Blue Cookies",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A blueberry-cookie cross with sweet dough terps and a calming body effect.",
@@ -606,7 +606,7 @@ export const products: Product[] = [
   {
     id: "prod-033",
     name: "Blue Dream",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "The timeless California classic with sweet blueberry and haze aromatics.",
@@ -624,7 +624,7 @@ export const products: Product[] = [
   {
     id: "prod-034",
     name: "Blue Dream",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "The exotic-tier Blue Dream with amplified terps and top-shelf bag appeal.",
@@ -642,7 +642,7 @@ export const products: Product[] = [
   {
     id: "prod-035",
     name: "Blue Gushers",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Juicy blue fruit-snack flavor that gushes with sweet, candy-like terps.",
@@ -660,7 +660,7 @@ export const products: Product[] = [
   {
     id: "prod-036",
     name: "Blue Nerds",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Tart, candy-coated blue flavor in a value-tier package.",
@@ -678,7 +678,7 @@ export const products: Product[] = [
   {
     id: "prod-037",
     name: "Blue Nerds",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Indoor-grade Blue Nerds with louder terps and denser trichome coverage.",
@@ -696,7 +696,7 @@ export const products: Product[] = [
   {
     id: "prod-038",
     name: "Blue Nerdz",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "A zaa-tier nerd candy cross with tangy blue raspberry notes.",
@@ -714,7 +714,7 @@ export const products: Product[] = [
   {
     id: "prod-039",
     name: "Blue Ritz",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Smooth blueberry terps with a ritzy, creamy undertone.",
@@ -732,7 +732,7 @@ export const products: Product[] = [
   {
     id: "prod-040",
     name: "Blue Zushi",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "A gassy, exotic-leaning zaa with blue fruit terps and Zushi genetics.",
@@ -750,7 +750,7 @@ export const products: Product[] = [
   {
     id: "prod-041",
     name: "Blueberry Glaze Zonuts",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Blueberry donut glaze terps with a sweet, pastry-like finish.",
@@ -768,7 +768,7 @@ export const products: Product[] = [
   {
     id: "prod-042",
     name: "Bolo Runtz Green",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A green phenotype of Bolo Runtz with bright color and fruity candy terps.",
@@ -786,7 +786,7 @@ export const products: Product[] = [
   {
     id: "prod-043",
     name: "Bubba Kush",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "The iconic Bubba Kush with heavy earthy, coffee, and chocolate undertones.",
@@ -804,7 +804,7 @@ export const products: Product[] = [
   {
     id: "prod-044",
     name: "Bubble Bath",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Clean, soapy terps with a floral lavender finish that soothes the senses.",
@@ -822,7 +822,7 @@ export const products: Product[] = [
   {
     id: "prod-045",
     name: "Butterface",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Rich, buttery terps with a smooth creamy exhale at an approachable price.",
@@ -840,7 +840,7 @@ export const products: Product[] = [
   {
     id: "prod-046",
     name: "BX-1",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "A potent exotic backcross with loud terps and heavy resin production.",
@@ -858,7 +858,7 @@ export const products: Product[] = [
   {
     id: "prod-047",
     name: "Candy Ethos",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Sweet candy terps from the Ethos genetics line at a wallet-friendly price.",
@@ -876,7 +876,7 @@ export const products: Product[] = [
   {
     id: "prod-048",
     name: "Candy Glue",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "A sticky candy-glue cross with sweet and gassy terps that cling to the palate.",
@@ -894,7 +894,7 @@ export const products: Product[] = [
   {
     id: "prod-049",
     name: "Candy Runtz Snow Caps",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "snow-cap",
     subcategory: "hybrid",
     description: "Candy Runtz coated in frosty snow cap crystals for extra potency and flavor.",
@@ -912,7 +912,7 @@ export const products: Product[] = [
   {
     id: "prod-050",
     name: "Caviar",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Premium caviar-grade nugs with a rich, luxurious terpene profile.",
@@ -930,7 +930,7 @@ export const products: Product[] = [
   {
     id: "prod-051",
     name: "Cereal Milk",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Tastes like the sweet milk left at the bottom of a bowl of fruity cereal.",
@@ -948,7 +948,7 @@ export const products: Product[] = [
   {
     id: "prod-052",
     name: "Cherry Gas",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Dark cherry sweetness meets heavy gas terps for a bold, pungent flavor.",
@@ -966,7 +966,7 @@ export const products: Product[] = [
   {
     id: "prod-053",
     name: "Cherry Pop",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Bright cherry flavor that pops with sweet, fruity indoor-quality terps.",
@@ -984,7 +984,7 @@ export const products: Product[] = [
   {
     id: "prod-054",
     name: "Cherry Poppers",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Small, dense cherry-flavored popcorn nugs at a great everyday price.",
@@ -1002,7 +1002,7 @@ export const products: Product[] = [
   {
     id: "prod-055",
     name: "Cherry Runtz",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A cherry-flavored Runtz phenotype with candy sweetness and colorful buds.",
@@ -1020,7 +1020,7 @@ export const products: Product[] = [
   {
     id: "prod-056",
     name: "Cotton Candy",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Light, airy buds with a sugary cotton candy sweetness on the nose.",
@@ -1038,7 +1038,7 @@ export const products: Product[] = [
   {
     id: "prod-057",
     name: "Cures",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "A healing, herbal-forward zaa with calming terps and a smooth draw.",
@@ -1056,7 +1056,7 @@ export const products: Product[] = [
   {
     id: "prod-058",
     name: "Da Funk",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Funky, skunky terps that bring old-school dankness at a budget price.",
@@ -1074,7 +1074,7 @@ export const products: Product[] = [
   {
     id: "prod-059",
     name: "Dante's Inferno",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "A fiery, spicy zaa with bold pepper and heat-forward terpenes.",
@@ -1092,7 +1092,7 @@ export const products: Product[] = [
   {
     id: "prod-060",
     name: "Deleted Scenes",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "A rare, hidden gem with subtle terps that reveal themselves on the exhale.",
@@ -1110,7 +1110,7 @@ export const products: Product[] = [
   {
     id: "prod-061",
     name: "Ether",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A potent, heady indoor with ethereal terps that hit fast and linger.",
@@ -1128,7 +1128,7 @@ export const products: Product[] = [
   {
     id: "prod-062",
     name: "Fire OG",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Classic Fire OG lineage with citrus and pine notes at an everyday price.",
@@ -1146,7 +1146,7 @@ export const products: Product[] = [
   {
     id: "prod-063",
     name: "Fruit Punch",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "A tropical fruit punch medley of sweet, mixed-fruit terps.",
@@ -1164,7 +1164,7 @@ export const products: Product[] = [
   {
     id: "prod-064",
     name: "Gelato #41",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "The famous Gelato 41 pheno with creamy, dessert-like terps and dense buds.",
@@ -1182,7 +1182,7 @@ export const products: Product[] = [
   {
     id: "prod-065",
     name: "Gelonade",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A citrusy gelato-lemonade cross with bright, tangy indoor-quality terps.",
@@ -1200,7 +1200,7 @@ export const products: Product[] = [
   {
     id: "prod-066",
     name: "Girl Scout Cookies",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "The legendary GSC with sweet, earthy cookie dough terps and a euphoric finish.",
@@ -1218,7 +1218,7 @@ export const products: Product[] = [
   {
     id: "prod-067",
     name: "Gods Glue",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "A divine glue cross with sticky resin and earthy, piney aromatics.",
@@ -1236,7 +1236,7 @@ export const products: Product[] = [
   {
     id: "prod-068",
     name: "Gorilla Glue #4",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "The legendary GG4 with extreme resin production and pungent diesel-earth terps.",
@@ -1254,7 +1254,7 @@ export const products: Product[] = [
   {
     id: "prod-069",
     name: "Granddaddy Purple",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "The iconic GDP with deep grape terps and stunning purple coloring at exotic quality.",
@@ -1272,7 +1272,7 @@ export const products: Product[] = [
   {
     id: "prod-070",
     name: "Grape Soda",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Fizzy grape soda terps with a sweet, carbonated-like mouthfeel.",
@@ -1290,7 +1290,7 @@ export const products: Product[] = [
   {
     id: "prod-071",
     name: "Gumbo Cherries",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Cherry-forward gumbo genetics with sweet, sticky buds at a low price.",
@@ -1308,7 +1308,7 @@ export const products: Product[] = [
   {
     id: "prod-072",
     name: "Gumbo Pop",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A popping gumbo phenotype with loud terps and dense indoor structure.",
@@ -1326,7 +1326,7 @@ export const products: Product[] = [
   {
     id: "prod-073",
     name: "Gusher Gelato",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "A juicy gusher-gelato cross with fruity candy and creamy terps.",
@@ -1344,7 +1344,7 @@ export const products: Product[] = [
   {
     id: "prod-074",
     name: "Hichew",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Chewy candy-inspired terps with tropical fruit sweetness on every hit.",
@@ -1362,7 +1362,7 @@ export const products: Product[] = [
   {
     id: "prod-075",
     name: "Ice Chain Gelato",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Frosty gelato genetics with icy trichomes and a smooth, creamy flavor.",
@@ -1380,7 +1380,7 @@ export const products: Product[] = [
   {
     id: "prod-076",
     name: "Ice Cream Cake",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Sweet vanilla ice cream terps with a cakey, doughy undertone.",
@@ -1398,7 +1398,7 @@ export const products: Product[] = [
   {
     id: "prod-077",
     name: "Italian Candy",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Sweet Italian confection terps with a sugary, aromatic zaa-grade profile.",
@@ -1416,7 +1416,7 @@ export const products: Product[] = [
   {
     id: "prod-078",
     name: "Key Lime Pie",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Tangy key lime zest meets sweet, creamy pie crust flavors.",
@@ -1434,7 +1434,7 @@ export const products: Product[] = [
   {
     id: "prod-079",
     name: "Larry Bird",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A legendary indoor named after the GOAT, delivering clutch terps every time.",
@@ -1452,7 +1452,7 @@ export const products: Product[] = [
   {
     id: "prod-080",
     name: "Last Badder Box \u2013 Concentrate",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A premium concentrate box featuring top-quality badder for dabbing enthusiasts.",
@@ -1470,7 +1470,7 @@ export const products: Product[] = [
   {
     id: "prod-081",
     name: "Last Spooky Box",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "A mystery zaa box with spooky-themed packaging and solid mid-tier quality.",
@@ -1488,7 +1488,7 @@ export const products: Product[] = [
   {
     id: "prod-082",
     name: "LCG",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Lemon Cherry Gelato zaa with citrus-cherry terps and creamy gelato genetics.",
@@ -1506,7 +1506,7 @@ export const products: Product[] = [
   {
     id: "prod-083",
     name: "LCG #85",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "The #85 phenotype of Lemon Cherry Gelato at a budget-friendly tier.",
@@ -1524,7 +1524,7 @@ export const products: Product[] = [
   {
     id: "prod-084",
     name: "LCG Nu",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "A new-generation LCG cut offering citrus-cherry flavor at low-tier pricing.",
@@ -1542,7 +1542,7 @@ export const products: Product[] = [
   {
     id: "prod-085",
     name: "LCG x BB",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "A Lemon Cherry Gelato and Bubba cross blending citrus terps with earthy kush.",
@@ -1560,7 +1560,7 @@ export const products: Product[] = [
   {
     id: "prod-086",
     name: "Lemon Cherry Gelato",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "The full indoor-grade Lemon Cherry Gelato with loud citrus, cherry, and cream.",
@@ -1578,7 +1578,7 @@ export const products: Product[] = [
   {
     id: "prod-087",
     name: "Lemon Zourz",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Sour lemon candy terps that pucker the lips with tangy citrus flavor.",
@@ -1596,7 +1596,7 @@ export const products: Product[] = [
   {
     id: "prod-088",
     name: "MAC",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "Miracle Alien Cookies at exotic grade with creamy, doughy, citrus terps.",
@@ -1614,7 +1614,7 @@ export const products: Product[] = [
   {
     id: "prod-089",
     name: "Mimosa",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Bright citrus and tropical fruit terps reminiscent of a fresh Sunday mimosa.",
@@ -1632,7 +1632,7 @@ export const products: Product[] = [
   {
     id: "prod-090",
     name: "Modified Grapez",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "A modified grape phenotype with deep purple color and sweet grape candy terps.",
@@ -1650,7 +1650,7 @@ export const products: Product[] = [
   {
     id: "prod-091",
     name: "Monster LCG",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Oversized LCG buds with monster structure and citrus-cherry flavor at low cost.",
@@ -1668,7 +1668,7 @@ export const products: Product[] = [
   {
     id: "prod-092",
     name: "Muun Moonrocks",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "moon-rocks",
     subcategory: "hybrid",
     description: "Dense moon rocks coated in concentrate and kief for maximum potency.",
@@ -1686,7 +1686,7 @@ export const products: Product[] = [
   {
     id: "prod-093",
     name: "New Bounty Box Snow Caps",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "snow-cap",
     subcategory: "hybrid",
     description: "A bounty of snow-capped buds dusted with crystalline trichomes for extra punch.",
@@ -1704,7 +1704,7 @@ export const products: Product[] = [
   {
     id: "prod-094",
     name: "Novelty Candy",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A fun, candy-themed indoor with playful sweetness and colorful bag appeal.",
@@ -1722,7 +1722,7 @@ export const products: Product[] = [
   {
     id: "prod-095",
     name: "Obama Runtz",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A presidential Runtz phenotype with smooth, sweet terps and top-tier appeal.",
@@ -1740,7 +1740,7 @@ export const products: Product[] = [
   {
     id: "prod-096",
     name: "OG Kush",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "The West Coast classic OG Kush with earthy, piney, lemony terps at low cost.",
@@ -1758,7 +1758,7 @@ export const products: Product[] = [
   {
     id: "prod-097",
     name: "Oreoz",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "Cookies-and-cream exotic with rich chocolate and vanilla terps in every nug.",
@@ -1775,7 +1775,7 @@ export const products: Product[] = [
   {
     id: "prod-098",
     name: "Permanent Marker",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Pungent, chemical-like marker terps with a skunky, gassy backbone.",
@@ -1793,7 +1793,7 @@ export const products: Product[] = [
   {
     id: "prod-099",
     name: "Pineapple Express",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "The famous tropical pineapple and cedar cross at zaa-grade quality.",
@@ -1811,7 +1811,7 @@ export const products: Product[] = [
   {
     id: "prod-100",
     name: "Pineapple Express",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "Exotic-tier Pineapple Express with amplified tropical terps and premium structure.",
@@ -1829,7 +1829,7 @@ export const products: Product[] = [
   {
     id: "prod-101",
     name: "Pineapple Fruz x Permanent Marker",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "A tropical-pungent cross blending pineapple sweetness with marker funk.",
@@ -1847,7 +1847,7 @@ export const products: Product[] = [
   {
     id: "prod-102",
     name: "Pink Guava Runtz",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Tropical pink guava meets Runtz candy genetics for a sweet, fruity zaa.",
@@ -1865,7 +1865,7 @@ export const products: Product[] = [
   {
     id: "prod-103",
     name: "Pink Runtz",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Pink-hued Runtz buds with candy sweetness at a budget-friendly price.",
@@ -1883,7 +1883,7 @@ export const products: Product[] = [
   {
     id: "prod-104",
     name: "Pink Runtz",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Indoor-grade Pink Runtz with louder terps and frostier trichome coverage.",
@@ -1901,7 +1901,7 @@ export const products: Product[] = [
   {
     id: "prod-105",
     name: "Platinum Bubba",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Platinum-grade Bubba with heavy body terps and a kushy, earthy nose.",
@@ -1919,7 +1919,7 @@ export const products: Product[] = [
   {
     id: "prod-106",
     name: "Platinum Cherriez",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Platinum-level cherry terps with a sweet, fruity aroma and dense nugs.",
@@ -1937,7 +1937,7 @@ export const products: Product[] = [
   {
     id: "prod-107",
     name: "Premium Liquid \u2013 Concentrate",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "A value-priced liquid concentrate perfect for filling cartridges and pens.",
@@ -1955,7 +1955,7 @@ export const products: Product[] = [
   {
     id: "prod-108",
     name: "Promethzine",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A sedating, purple-leaning indoor with grape and medicinal terps.",
@@ -1973,7 +1973,7 @@ export const products: Product[] = [
   {
     id: "prod-109",
     name: "Purple Mochi",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "A premium exotic mochi cross with sweet, doughy terps and deep purple hues.",
@@ -1991,7 +1991,7 @@ export const products: Product[] = [
   {
     id: "prod-110",
     name: "Purple Smalls",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Small-sized purple nugs with sweet grape terps at a mid-tier price.",
@@ -2009,7 +2009,7 @@ export const products: Product[] = [
   {
     id: "prod-111",
     name: "Purple Voodoo",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Mysterious purple buds with earthy, berry undertones at a low price point.",
@@ -2027,7 +2027,7 @@ export const products: Product[] = [
   {
     id: "prod-112",
     name: "Rainbow Candy Za",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "A rainbow of candy flavors packed into colorful, trichome-heavy zaa buds.",
@@ -2045,7 +2045,7 @@ export const products: Product[] = [
   {
     id: "prod-113",
     name: "Rainbow Cherry",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "A rainbow cherry medley with sweet, multi-colored terps at an everyday price.",
@@ -2063,7 +2063,7 @@ export const products: Product[] = [
   {
     id: "prod-114",
     name: "Rainbow Zangria",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "A fruity sangria-inspired blend with mixed fruit terps and vibrant color.",
@@ -2081,7 +2081,7 @@ export const products: Product[] = [
   {
     id: "prod-115",
     name: "Real 41",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "The authentic 41 cut with creamy gelato terps and a smooth, even draw.",
@@ -2099,7 +2099,7 @@ export const products: Product[] = [
   {
     id: "prod-116",
     name: "Red Rum Runtz",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "A dark, red-hued Runtz with sweet berry punch and mysterious depth.",
@@ -2116,7 +2116,7 @@ export const products: Product[] = [
   {
     id: "prod-117",
     name: "RS-1000",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "A potent numbered phenotype delivering strong effects at a value price.",
@@ -2134,7 +2134,7 @@ export const products: Product[] = [
   {
     id: "prod-118",
     name: "Runtz",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "The original Runtz with candy-sweet terps and rainbow-colored buds at indoor quality.",
@@ -2152,7 +2152,7 @@ export const products: Product[] = [
   {
     id: "prod-119",
     name: "Scented Marker",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Aromatic marker-like terps with a sweet, chemical-candy undertone.",
@@ -2170,7 +2170,7 @@ export const products: Product[] = [
   {
     id: "prod-120",
     name: "Shrooms",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "shrooms",
     subcategory: "hybrid",
     description: "Premium quality shrooms offering a unique, earthy experience.",
@@ -2188,7 +2188,7 @@ export const products: Product[] = [
   {
     id: "prod-121",
     name: "Silverback Gorilla",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "A powerful exotic gorilla cross with heavy diesel terps and massive potency.",
@@ -2206,7 +2206,7 @@ export const products: Product[] = [
   {
     id: "prod-122",
     name: "Slurricane",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A tropical storm of berry and grape terps with a knockout body effect.",
@@ -2224,7 +2224,7 @@ export const products: Product[] = [
   {
     id: "prod-123",
     name: "Snow Storm",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Blizzard-level trichome coverage with cool, minty terps and white-frosted buds.",
@@ -2242,7 +2242,7 @@ export const products: Product[] = [
   {
     id: "prod-124",
     name: "Sour Diesel",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "The East Coast legend grown indoors with pungent diesel fuel terps.",
@@ -2260,7 +2260,7 @@ export const products: Product[] = [
   {
     id: "prod-125",
     name: "Sour Diesel",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Budget-friendly Sour Diesel with the same gassy, energizing terp profile.",
@@ -2278,7 +2278,7 @@ export const products: Product[] = [
   {
     id: "prod-126",
     name: "Sour Skittlez",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Sour candy Skittles terps with a rainbow of tangy fruit flavors.",
@@ -2296,7 +2296,7 @@ export const products: Product[] = [
   {
     id: "prod-127",
     name: "Stardawg",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "A classic Chemdawg descendant with piney, sour terps at a low price.",
@@ -2314,7 +2314,7 @@ export const products: Product[] = [
   {
     id: "prod-128",
     name: "Sunset Sherbert",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "A top-shelf exotic sherbet with sweet, creamy citrus terps and gorgeous colors.",
@@ -2332,7 +2332,7 @@ export const products: Product[] = [
   {
     id: "prod-129",
     name: "Super Boof",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "A gassy, funky boof with surprising potency at a low-tier price.",
@@ -2350,7 +2350,7 @@ export const products: Product[] = [
   {
     id: "prod-130",
     name: "Sushi",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "A unique, savory-terp profile with gassy, zushi-like characteristics at low cost.",
@@ -2368,7 +2368,7 @@ export const products: Product[] = [
   {
     id: "prod-131",
     name: "Trap Fuel",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "Heavy fuel terps with a diesel-forward nose straight from the trap.",
@@ -2386,7 +2386,7 @@ export const products: Product[] = [
   {
     id: "prod-132",
     name: "Trop Cherry",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Tropical cherry terps with a sweet, sun-kissed fruit flavor.",
@@ -2404,7 +2404,7 @@ export const products: Product[] = [
   {
     id: "prod-133",
     name: "Tropical Jealousy",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "A tropical twist on Jealousy genetics with fruity, exotic-leaning terps.",
@@ -2422,7 +2422,7 @@ export const products: Product[] = [
   {
     id: "prod-134",
     name: "Truffle Candy Runtz",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Rich truffle and candy terps combined with Runtz genetics for a decadent indoor.",
@@ -2440,7 +2440,7 @@ export const products: Product[] = [
   {
     id: "prod-135",
     name: "Ultra Violet",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Deep violet-colored buds with sweet grape and floral terps.",
@@ -2458,7 +2458,7 @@ export const products: Product[] = [
   {
     id: "prod-136",
     name: "Uncle Snoop",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "An exotic homage to the Doggfather with smooth, piney, and earthy terps.",
@@ -2476,7 +2476,7 @@ export const products: Product[] = [
   {
     id: "prod-137",
     name: "Uncle Snoop",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "lows",
     subcategory: "hybrid",
     description: "The budget-tier Uncle Snoop cut with mellow, earthy terps at a low price.",
@@ -2494,7 +2494,7 @@ export const products: Product[] = [
   {
     id: "prod-138",
     name: "Wedding Cake",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Sweet vanilla frosting terps from the classic Wedding Cake lineage.",
@@ -2512,7 +2512,7 @@ export const products: Product[] = [
   {
     id: "prod-139",
     name: "Wedding Cake",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "Indoor-grade Wedding Cake with richer terps and denser, frostier buds.",
@@ -2530,7 +2530,7 @@ export const products: Product[] = [
   {
     id: "prod-140",
     name: "White Himalaya",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "A snow-white exotic with crisp, clean terps inspired by Himalayan peaks.",
@@ -2547,7 +2547,7 @@ export const products: Product[] = [
   {
     id: "prod-141",
     name: "White Widow",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "exotics-indoors",
     subcategory: "hybrid",
     description: "The legendary White Widow at exotic grade with massive resin and spicy, earthy terps.",
@@ -2565,7 +2565,7 @@ export const products: Product[] = [
   {
     id: "prod-142",
     name: "Wild Cherriez",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "Untamed cherry terps with a wild, tangy sweetness in every hit.",
@@ -2583,7 +2583,7 @@ export const products: Product[] = [
   {
     id: "prod-143",
     name: "Xcaliber",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "A sharp, cutting-edge zaa with bold, complex terps worthy of its legendary name.",
@@ -2601,7 +2601,7 @@ export const products: Product[] = [
   {
     id: "prod-144",
     name: "Zamosa Green",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "indoors",
     subcategory: "hybrid",
     description: "A green Zamosa phenotype with bright citrus terps and lively indoor quality.",
@@ -2619,7 +2619,7 @@ export const products: Product[] = [
   {
     id: "prod-145",
     name: "Zkittlez x BX3",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "A Zkittlez backcross with rainbow candy terps and colorful bag appeal.",
@@ -2637,7 +2637,7 @@ export const products: Product[] = [
   {
     id: "prod-146",
     name: "Zoonami",
-    brand: "Park Street Boys",
+    brand: "Pack Street Boys",
     category: "zaa",
     subcategory: "hybrid",
     description: "A tidal wave of zoo-pack terps with gassy, fruity flavor and heavy effects.",

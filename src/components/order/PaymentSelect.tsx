@@ -109,7 +109,7 @@ export function PaymentSelect() {
 
   const buildTelegramMessage = () => {
     const lines: string[] = [];
-    lines.push("--- PARK STREET BOYS ORDER ---");
+    lines.push("--- PACK STREET BOYS ORDER ---");
     lines.push("");
 
     // Contact info

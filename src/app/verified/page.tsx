@@ -36,7 +36,7 @@ export default function VerifiedPage() {
           >
             <VerifiedBadgeIcon size={64} className="mx-auto mb-6" />
             <h2 className="font-display text-2xl font-bold text-ivory">
-              Park Street Boys Wholesale
+              Pack Street Boys Wholesale
             </h2>
             <div className="mx-auto mt-2 flex items-center justify-center gap-2">
               <span className="text-lg text-silver">Verified Seller</span>
