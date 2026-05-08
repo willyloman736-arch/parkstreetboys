@@ -248,6 +248,43 @@ export default function LandingPage() {
               </svg>
               <span className="relative z-10">Potato</span>
             </motion.a>
+
+            {/* Website — premium ivory button (full width) */}
+            <motion.a
+              whileHover={{ scale: 1.03, y: -1 }}
+              whileTap={{ scale: 0.97 }}
+              href="https://parkstreetboyswholesale.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackEvent("Lead")}
+              className="relative col-span-2 flex items-center justify-center gap-2 overflow-hidden rounded-xl py-3.5 text-xs font-bold text-[#0a0a0a] shadow-lg shadow-white/10 transition-all hover:shadow-xl hover:shadow-white/20 sm:rounded-2xl sm:text-sm"
+              style={{
+                background:
+                  "linear-gradient(135deg, #f5f5f0 0%, #e8e8e0 50%, #f5f5f0 100%)",
+              }}
+            >
+              {/* Glossy shimmer highlight */}
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-transparent"
+              />
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="relative z-10"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+              <span className="relative z-10">Order on Website</span>
+            </motion.a>
           </div>
 
           {/* Product preview grid */}
